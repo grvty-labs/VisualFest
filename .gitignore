@@ -1,4 +1,17 @@
-/_build
-/deps
+# App artifacts
+visualfest/_build
+visualfest/db
+visualfest/deps
+visualfest/node_modules
+visualfest/*.ez
+
+# Generated on crash by the VM
 erl_crash.dump
-*.ez
+
+# The config/prod.secret.exs file by default contains sensitive
+# data and you should not commit it into version control.
+#
+# Alternatively, you may comment the line below and commit the
+# secrets file as long as you replace its contents by environment
+# variables.
+visualfest/config/prod.secret.exs
