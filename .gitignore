@@ -4,6 +4,7 @@ visualfest/db
 visualfest/deps
 visualfest/node_modules
 visualfest/*.ez
+visualfest/priv/static
 
 # Generated on crash by the VM
 erl_crash.dump
