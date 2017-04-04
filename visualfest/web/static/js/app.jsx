@@ -34,7 +34,10 @@
 //  }
 // }
 
-import "phoenix_html";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import TestApp from './components/TestApp.jsx';
+import 'phoenix_html';
 // import { Socket } from "phoenix";
 
 // Import local files
@@ -52,3 +55,8 @@ import "phoenix_html";
 // }
 //
 // window.addEventListener('DOMContentLoaded', handleDOMContentLoaded, false);
+
+
+ReactDOM.render(
+  <TestApp />,
+  document.getElementById('react-content'));
