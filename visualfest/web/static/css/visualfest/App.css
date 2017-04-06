@@ -63,8 +63,28 @@
   height:8%;
 }
 
-//TestMain
+/*TestMain*/
+
+.bodyMain {
+  overflow: hidden;
+  position: absolute;
+  height:100%;
+  display: flex;
+  margin-left: 10%;
+  align-items: center;
+}
 
 .contenedorMain {
   lost-column: 1/2;
+  color: var(--color_main);
+}
+
+.cajaTextoMain{
+  border-top: 1px solid var(--color_main);
+  padding-top: 2rem;
+}
+
+.subtitulo{
+  margin-top:-1rem;
+  padding-bottom:1rem;
 }
