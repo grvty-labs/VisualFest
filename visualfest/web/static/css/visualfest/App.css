@@ -88,3 +88,20 @@
   margin-top:-1rem;
   padding-bottom:1rem;
 }
+
+/*TestConferencias*/
+
+.imagesGaleria{
+  width:30%;
+  height:30%;
+}
+
+.galeria{
+  display:flex;
+  justify-content: space-between;
+}
+
+.contenedorConferencia{
+  lost-column:2/3;
+  color: var(--color_main);
+}
