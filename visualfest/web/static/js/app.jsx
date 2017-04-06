@@ -36,8 +36,10 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import TestApp from './components/TestApp.jsx';
+//import TestApp from './components/TestApp.jsx';
+import TestMain from './components/TestMain.jsx';
 import 'phoenix_html';
+
 // import { Socket } from "phoenix";
 
 // Import local files
@@ -58,5 +60,6 @@ import 'phoenix_html';
 
 
 ReactDOM.render(
-  <TestApp />,
+  //<TestApp />,
+  <TestMain />,
   document.getElementById('react-content'));
