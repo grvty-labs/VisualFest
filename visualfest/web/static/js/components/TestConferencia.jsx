@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-var images = [
-  'http://soul-fi.ipn.pt/wp-content/uploads/2014/09/user-icon-silhouette-ae9ddcaf4a156a47931d5719ecee17b9.png', 'http://soul-fi.ipn.pt/wp-content/uploads/2014/09/user-icon-silhouette-ae9ddcaf4a156a47931d5719ecee17b9.png', 'http://soul-fi.ipn.pt/wp-content/uploads/2014/09/user-icon-silhouette-ae9ddcaf4a156a47931d5719ecee17b9.png'];
-var informations = ['Titulo de la Conferencia', 'Titulo de la Conferencia', 'Titulo de la Conferencia'];
-var names = ['Nombre del ponente', 'Nombre del ponente', 'Nombre del ponente'];
-var hours = ['Horario', 'Horario', 'Horario'];
+
+var conferencias = [
+{ "imagen":"https://goo.gl/vkdnFs" , "information": "Titulo de la Conferencia","name":"Nombre del ponente", "hour":"Horario" },
+{ "imagen":"https://goo.gl/vkdnFs" , "information": "Titulo de la Conferencia","name":"Nombre del ponente", "hour":"Horario" },
+{ "imagen":"https://goo.gl/vkdnFs" , "information": "Titulo de la Conferencia","name":"Nombre del ponente", "hour":"Horario" }];
+
 
 class App extends Component{
   render() {
@@ -28,8 +29,7 @@ var Contenedor = React.createClass({
     return (
       <div className = "contenedorConferencia">
         <TituloCentrado/>
-        <Galeria images=
-          { images } informations = { informations } names = { names } hours = { hours } />
+        <Galeria conferencias= { conferencias } />
       </div>
     );
   },
@@ -45,21 +45,20 @@ var TituloCentrado = React.createClass({
 
 var Galeria = React.createClass({
   render() {
-    var imagesHTML = this.props.images.map(function (image) {
-      return <img src = { image } className = "imagesGaleria"></img>;
-    });
-
-    var informacionConferencia = this.props.informations.map(function (information) {
-      return <h5 className = "tituloConferencia">{ information }</h5>;
-    });
-
-    var nombre = this.props.names.map(function (name) {
-      return <h6 className = "nombreConferencia">{ name }></h6>;
+    var conferenciaHTMLS = this.props.conferencias.map(function (conferencia, index) {
+      return (
+        <div key = {index} className = "galeria">
+          <img src = {conferencia.imagen} className = "imagesGaleria"></img>
+          <h4 className = "textoImagenInformacion">{conferencia.information}</h4>
+          <h5 className = "textoImagenNombre">{conferencia.name}</h5>
+          <h6 className = "textoImagenHorario">{conferencia.hour}</h6>
+        </div>
+      );
     });
 
     return (
       <div className = "galeria">
-        { imagesHTML }
+        { conferenciaHTMLS }
       </div>
     );
   },

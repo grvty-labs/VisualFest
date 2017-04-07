@@ -92,8 +92,9 @@
 /*TestConferencias*/
 
 .imagesGaleria{
-  width:30%;
-  height:30%;
+  width:90%;
+  height:90%;
+  position:relative;
 }
 
 .galeria{
@@ -104,4 +105,22 @@
 .contenedorConferencia{
   lost-column:2/3;
   color: var(--color_main);
+}
+
+.textoImagenInformacion{
+  position:absolute;
+  margin-top:13%;
+  margin-left:7%;
+}
+
+.textoImagenNombre{
+  position:absolute;
+  margin-top:14.5%;
+  margin-left:11%;
+}
+
+.textoImagenHorario{
+  position:absolute;
+  margin-top:16%;
+  margin-left:16.7%;
 }
