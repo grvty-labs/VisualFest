@@ -1,8 +1,9 @@
 import { routerReducer } from 'react-router-redux';
 import { combineReducers } from 'redux';
-// import {
-//   DATA_INGREDIENTS,
-// } from '../constants/reducerNames';
+import {
+  UI_APP,
+} from '../constants/reducers';
+import UIAppReducer from './ui/app';
 
 const reducersJson = {
   // form: formReducer,
@@ -10,7 +11,7 @@ const reducersJson = {
 };
 
 // UI Reducers
-// reducersJson[UI_INGREDIENT_TABLE] = UIIngredientTable;
+reducersJson[UI_APP] = UIAppReducer;
 
 // Data Reducers
 
