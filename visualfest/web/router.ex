@@ -16,8 +16,8 @@ defmodule Visualfest.Router do
   scope "/", Visualfest do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
-    get "/alt", PageController, :alt
+    # get "/", PageController, :index
+    get "/*path", PageController, :alt
   end
 
   # Other scopes may use custom stacks.
