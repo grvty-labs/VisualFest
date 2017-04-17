@@ -36,8 +36,8 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import TestApp from './components/TestApp.jsx';
-//import TestMain from './components/TestMain.jsx';
+import TestApp from './components/TestApp.jsx';
+import TestMain from './components/TestMain.jsx';
 import TestConferencia from './components/TestConferencia.jsx';
 import 'phoenix_html';
 
@@ -62,6 +62,7 @@ import 'phoenix_html';
 
 ReactDOM.render(
   //<TestApp />,
-  //<TestMain />,
-  <TestConferencia />,
+
+  <TestMain />,
+  //<TestConferencia />,
   document.getElementById('react-content'));

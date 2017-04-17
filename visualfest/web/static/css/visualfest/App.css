@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:regular,bold');
+
 :root{
   --color_main: #ACBCCE;
+  --font:'Open Sans', sans-serif;
+  --amarillo: #ffe100;
+  --rosa: #ff004f;
 }
 
 .contenedor {
@@ -63,6 +68,10 @@
   height:8%;
 }
 
+.tituloAmarillo{
+  color: var(--amarillo);
+}
+
 /*TestMain*/
 
 .bodyMain {
@@ -70,16 +79,17 @@
   position: absolute;
   height:100%;
   display: flex;
-  margin-left: 10%;
+  justify-content:center;
   align-items: center;
 }
 
 .contenedorMain {
   lost-column: 1/2;
   color: var(--color_main);
+  font-family: var(--font);
 }
 
-.cajaTextoMain{
+.cajaTexto{
   border-top: 1px solid var(--color_main);
   padding-top: 2rem;
 }
@@ -110,17 +120,14 @@
 .textoImagenInformacion{
   position:absolute;
   margin-top:13%;
-  margin-left:7%;
 }
 
 .textoImagenNombre{
   position:absolute;
   margin-top:14.5%;
-  margin-left:11%;
 }
 
 .textoImagenHorario{
   position:absolute;
   margin-top:16%;
-  margin-left:16.7%;
 }
