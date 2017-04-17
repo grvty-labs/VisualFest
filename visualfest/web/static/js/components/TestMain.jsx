@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { CajaTexto } from './Componentes.jsx';
 
 class App extends Component{
   render() {
@@ -33,25 +34,9 @@ var Contenedor = React.createClass({
 var TituloCentrado = React.createClass({
   render() {
     return (
-      <h1>VEINTEDIECISIETE</h1>
-    );
-  },
-});
-
-var CajaTexto = React.createClass({
-  render() {
-    return (
       <div>
-        <p className = "cajaTextoMain"> Successful businesses have many things in common, today we’ll look at the big
-‘R’of recognition and how a digital advertising network may help.</p>
-<p>Recognition can be illustrated by two individuals entering a crowded room at a
-party. Both walk to the far side of the room, one of them slips through the crowd
-easily and unnoticed as they reach the far side. The second person takes much
-longer to reach the far side because they are engaged in conversations along the
-way as they continue to meet acquaintances and friends during their path. Which
-type of person would you like to model your business after?
-Your business is in a continual battle for your customers’ recognition whether you
-know it or not. If you happen to be fortunate enough to be in a marketplace with </p>
+        <h1 className = "tituloAmarillo">VEINTE</h1>
+        <h1 className = "tituloRosa">DIECISIETE</h1>
       </div>
     );
   },
@@ -64,5 +49,6 @@ var Subtitulo = React.createClass({
     );
   },
 });
+
 
 export default App;
