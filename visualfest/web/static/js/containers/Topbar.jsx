@@ -6,7 +6,7 @@ import Topbar from '../components/Topbar.jsx';
 
 function mapStateToProps(state) {
   return {
-    home_display: 'https://github.com/fluidicon.png',
+    home_display: '/images/logo.svg',
     goToDisplays: [
       'ACERCA',
       'CONFERENCIAS',
