@@ -1,6 +1,50 @@
 @import '../waddles/settings';
 @import '../waddles/utils';
+@import './downbar';
+@import './topbar';
+@import './sidebar';
+/*@import "./visualfest/App";*/
+@lost flexbox flex;
 
+nav,
+div {
+  box-sizing: border-box;
+}
+
+.react-body {
+  height: 100vh;
+  max-height: 100vh;
+  overflow: auto;
+  position: relative;
+
+  & .route-content {
+    height: calc(100vh - 155px);
+    max-height: calc(100vh - 155px);
+    overflow: auto;
+    position: absolute;
+    padding: 10px 0px 10px 80px;
+    margin-right: 80px;
+    width: calc(99.99vw - 80px);
+
+    & .route-enter {
+      opacity: 0.01;
+    }
+
+    & .route-enter.example-enter-active {
+      opacity: 1;
+      transition: opacity 500ms ease-in;
+    }
+
+    & .route-leave {
+      opacity: 1;
+    }
+
+    & .route-leave.route-leave-active {
+      opacity: 0.01;
+      transition: opacity 300ms ease-in;
+    }
+  }
+}
 
 .container {
     width: 100%;
