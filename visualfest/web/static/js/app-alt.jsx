@@ -51,7 +51,7 @@ const VisualFest = React.createClass({
                 <Route key={6} path="/galeria" component={ Gallery }/>
                 <Route key={7} path="/contacto" component={ Contact }/>
               </CSSTransitionGroup>
-              </div>
+            </div>
             <Sidebar />
             <Downbar />
           </div>
