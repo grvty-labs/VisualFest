@@ -3,10 +3,16 @@ import React, { Component } from 'react';
 
 export default class TextBox extends Component {
   render() {
-    return (
-        <div className = "white">
-          { this.props.text }
-        </div>
+    var texto = this.props.text.map(function (line, index) {
+      return (
+        <p key = { index }>
+          { line.body }
+        </p>
     );
+    }
+  );
+    return (
+    { texto }
+  );
   }
 }
