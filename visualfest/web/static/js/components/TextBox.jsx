@@ -12,7 +12,9 @@ export default class TextBox extends Component {
     }
   );
     return (
-    { texto }
+      <div className= "white">
+        { texto }
+    </div>
   );
   }
 }
