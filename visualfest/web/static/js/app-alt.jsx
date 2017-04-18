@@ -23,9 +23,6 @@ import Sponsors from './containers/Sponsors.jsx';
 import Topbar from './containers/Topbar.jsx';
 import Workshops from './containers/Workshops.jsx';
 
-// import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
-import anime from 'animejs';
-
 const store = configureStore();
 
 class VisualFest extends Component {

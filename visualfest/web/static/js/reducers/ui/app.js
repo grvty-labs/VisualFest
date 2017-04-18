@@ -1,5 +1,5 @@
 import {
-  LOCATION_CHANGE
+  LOCATION_ANIMATE,
 } from '../../constants/actions';
 
 const initialState = {
@@ -8,9 +8,9 @@ const initialState = {
 
 export default function (state = initialState, action = {}) {
   switch (action.type) {
-    case LOCATION_CHANGE:
+    case LOCATION_ANIMATE:
       return {
-        pathname: action.payload.pathname,
+        pathname: action.payload,
       };
 
     default:

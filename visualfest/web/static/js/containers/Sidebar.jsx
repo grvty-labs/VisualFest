@@ -1,7 +1,7 @@
 "use strict";
 import React from 'react';
 import { connect } from 'react-redux';
-import { push } from 'react-router-redux';
+import { changeLocation } from '../actions/location';
 import Sidebar from '../components/Sidebar.jsx';
 
 function mapStateToProps(state) {
@@ -15,9 +15,9 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    location_action: () => (dispatch(push('/'))),
+    location_action: () => (dispatch(changeLocation('/'))),
     goToActions: [
-      () => (dispatch(push('/contacto'))),
+      () => (dispatch(changeLocation('/contacto'))),
     ],
   };
 }

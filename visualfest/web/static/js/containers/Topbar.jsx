@@ -1,7 +1,7 @@
 "use strict";
 import React from 'react';
 import { connect } from 'react-redux';
-import { push } from 'react-router-redux';
+import { changeLocation } from '../actions/location';
 import Topbar from '../components/Topbar.jsx';
 
 function mapStateToProps(state) {
@@ -19,13 +19,13 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    home_action: () => (dispatch(push('/'))),
+    home_action: () => (dispatch(changeLocation('/'))),
     goToActions: [
-      () => (dispatch(push('/acerca'))),
-      () => (dispatch(push('/conferencias'))),
-      () => (dispatch(push('/talleres'))),
-      () => (dispatch(push('/patrocinadores'))),
-      () => (dispatch(push('/galeria'))),
+      () => (dispatch(changeLocation('/acerca'))),
+      () => (dispatch(changeLocation('/conferencias'))),
+      () => (dispatch(changeLocation('/talleres'))),
+      () => (dispatch(changeLocation('/patrocinadores'))),
+      () => (dispatch(changeLocation('/galeria'))),
     ],
   };
 }

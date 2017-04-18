@@ -1,2 +1,4 @@
 
-export const LOCATION_CHANGE = '@@router/LOCATION_CHANGE';
+export const NULL = 'NULL';
+export const LOCATION_CHANGE = 'LOCATION_CHANGE';
+export const LOCATION_ANIMATE = 'LOCATION_ANIMATE';
