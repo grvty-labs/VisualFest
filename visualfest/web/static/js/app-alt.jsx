@@ -1,12 +1,12 @@
 "use strict";
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import {
   ConnectedRouter as Router,
   push
 } from 'react-router-redux';
-import { Route } from 'react-router';
+import { Route, Switch } from 'react-router';
 import {
   configureStore,
   history,
@@ -17,32 +17,38 @@ import Contact from './containers/Contact.jsx';
 import Downbar from './containers/Downbar.jsx';
 import Gallery from './containers/Gallery.jsx';
 import Home from './containers/Home.jsx';
+import Revealer from './containers/Revealer.jsx';
 import Sidebar from './containers/Sidebar.jsx';
 import Sponsors from './containers/Sponsors.jsx';
 import Topbar from './containers/Topbar.jsx';
 import Workshops from './containers/Workshops.jsx';
 
-import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+// import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
+import anime from 'animejs';
 
 const store = configureStore();
 
-const VisualFest = React.createClass({
+class VisualFest extends Component {
   render() {
+
     return (
+
       <Provider store={ store }>
         { /* ConnectedRouter will use the store from Provider automatically */ }
         <Router history={ history }>
           <div className='react-body'>
+            <Revealer />
             <Topbar />
             <div className='route-content'>
-              <CSSTransitionGroup
+              {/* <CSSTransitionGroup
                 transitionName='route'
                 transitionAppear={true}
-                transitionAppearTimeout={500}
+                transitionAppearTimeout={1000}
                 transitionEnterTimeout={1000}
                 transitionLeaveTimeout={1000}
-                transitionEnter={false}
-                transitionLeave={false}>
+                transitionEnter={true}
+              transitionLeave={true}> */}
+              <Switch>
                 <Route key={1} exact path="/" component={ Home }/>
                 <Route key={2} path="/acerca" component={ About }/>
                 <Route key={3} path="/conferencias" component={ Conferences }/>
@@ -50,7 +56,8 @@ const VisualFest = React.createClass({
                 <Route key={5} path="/patrocinadores" component={ Sponsors }/>
                 <Route key={6} path="/galeria" component={ Gallery }/>
                 <Route key={7} path="/contacto" component={ Contact }/>
-              </CSSTransitionGroup>
+              </Switch>
+              {/* </CSSTransitionGroup> */}
             </div>
             <Sidebar />
             <Downbar />
@@ -58,8 +65,8 @@ const VisualFest = React.createClass({
         </Router>
       </Provider>
     );
-  },
-});
+  }
+};
 
 ReactDOM.render(
   <VisualFest />,
