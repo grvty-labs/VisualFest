@@ -9,6 +9,7 @@ export default class Home extends Component {
     return (
       <div className = "bodyMain">
       <Title yellowTitle = { this.props.yellowTitle } pinkTitle = { this.props.pinkTitle }/>
+      <Subtitle/>
       <TextBox text={  this.props.bodyText } />
     </div>
   );
