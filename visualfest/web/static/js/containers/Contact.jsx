@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 import Contact from '../components/Contact.jsx';
 
 function mapStateToProps(state) {
-  return {};
+  return {
+  };
 }
 
 function mapDispatchToProps(dispatch) {

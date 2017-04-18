@@ -6,7 +6,7 @@ import Sidebar from '../components/Sidebar.jsx';
 
 function mapStateToProps(state) {
   return {
-    location_display: 'https://github.com/fluidicon.png',
+    location_display: '/images/ic-checkin.svg',
     goToDisplays: [
       'CONTACTO',
     ],
