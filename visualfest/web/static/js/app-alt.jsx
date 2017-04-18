@@ -37,7 +37,6 @@ class VisualFest extends Component {
         { /* ConnectedRouter will use the store from Provider automatically */ }
         <Router history={ history }>
           <div className='react-body'>
-            <Revealer />
             <Topbar />
             <div className='route-content'>
               {/* <CSSTransitionGroup
@@ -61,6 +60,7 @@ class VisualFest extends Component {
             </div>
             <Sidebar />
             <Downbar />
+            <Revealer />
           </div>
         </Router>
       </Provider>

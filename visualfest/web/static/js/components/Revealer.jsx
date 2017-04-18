@@ -24,10 +24,17 @@ export default class Revealer extends Component {
   }
 
   componentDidMount() {
+    let options = {
+      ...this.options,
+      direction: 'reverse',
+      delay: ANIMATION_TIME,
+      loop: false,
+    };
     this.createAnime(this.options);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
+    console.log('Update');
     this.createAnime(this.options);
     return true;
   }
@@ -41,7 +48,7 @@ export default class Revealer extends Component {
     return (
       <div className='revealer'>
         <div id='morphing' className='morphing'>
-          <svg width='100%' height='100%' viewBox='.5 0 9 2'
+          <svg width='100%' height='100vh' viewBox='.5 0 9 2'
             preserveAspectRatio='none'
             style={{
               left: '-1px',
