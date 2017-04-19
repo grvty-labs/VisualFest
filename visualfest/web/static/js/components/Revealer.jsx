@@ -1,11 +1,13 @@
 "use strict";
 import React, { Component } from 'react';
-import { ANIMATION_TIME } from '../constants/hardcode.js';
+import { REVEALER_ANIMATION_TIME } from '../constants/hardcode.js';
 import anime from 'animejs';
 
 export default class Revealer extends Component {
   constructor(props) {
     super(props);
+    this.createAnime = this.createAnime.bind(this);
+
     this.targets = '#morphing .polymorph';
     this.options = {
       // d: 'M 0,0 L 10,0 L 10,10 C 10,10 10,10 5,10 C 0,10 0,10 0,10 Z;M 0,0 L 10,0 L 10,0 C 10,0 10,5 5,5 C 0,5 0,0 0,0 Z;M 0,0 L 10,0 L 10,0 C 10,0 10,0 5,0 C 0,0 0,0 0,0 Z',
@@ -15,10 +17,10 @@ export default class Revealer extends Component {
       // d: 'M 0,0 10,0 10,10 0,10 Z',
       // d: 'M 0,0 10,0 10,6 0,8 Z',
       // d: 'M 0,0 10,0 10,0 0,0 Z',
-      easing: 'easeOutQuad',
+      easing: 'easeInOutQuad',
       direction: 'alternate',
       delay: 150,
-      duration: ANIMATION_TIME,
+      duration: REVEALER_ANIMATION_TIME,
       loop: 2,
     };
   }
@@ -26,15 +28,14 @@ export default class Revealer extends Component {
   componentDidMount() {
     let options = {
       ...this.options,
+      delay: REVEALER_ANIMATION_TIME * 2,
       direction: 'reverse',
-      delay: ANIMATION_TIME,
-      loop: false,
+      loop: 1,
     };
-    this.createAnime(this.options);
+    this.createAnime(options);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
-    console.log('Update');
     this.createAnime(this.options);
     return true;
   }
@@ -57,7 +58,7 @@ export default class Revealer extends Component {
               position: 'absolute',
               top: '-1px',
             }}>
-            <path className="polymorph" fill='#02161E' d='M 0,0 L 10,0 L 10,0 C 10,0 10,0 5,0 C 0,0 0,0 0,0 Z;M 0,0 L 10,0 L 10,0 C 10,0 10,5 5,5 C 0,5 0,0 0,0 Z;M 0,0 L 10,0 L 10,10 C 10,10 10,10 5,10 C 0,10 0,10 0,10 Z'/>
+            <path className="polymorph" fill='#002EFF' d='M 0,0 L 10,0 L 10,0 C 10,0 10,0 5,0 C 0,0 0,0 0,0 Z;M 0,0 L 10,0 L 10,0 C 10,0 10,5 5,5 C 0,5 0,0 0,0 Z;M 0,0 L 10,0 L 10,10 C 10,10 10,10 5,10 C 0,10 0,10 0,10 Z'/>
           </svg>
         </div>
       </div>

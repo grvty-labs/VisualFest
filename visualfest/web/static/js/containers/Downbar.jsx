@@ -6,9 +6,9 @@ import Downbar from '../components/Downbar.jsx';
 function mapStateToProps(state) {
   return {
     goTo: [
-      { display: 'https://github.com/fluidicon.png', link: 'https://github.com/fluidicon.png' },
-      { display: 'https://github.com/fluidicon.png', link: 'https://github.com/fluidicon.png' },
-      { display: 'https://github.com/fluidicon.png', link: 'https://github.com/fluidicon.png' },
+      { display: '/images/logo-uaq.svg', link: 'https://github.com/fluidicon.png' },
+      { display: '/images/logo-facultad.svg', link: 'https://github.com/fluidicon.png' },
+      { display: '/images/logo-100uaq.svg', link: 'https://github.com/fluidicon.png' },
     ],
   };
 }

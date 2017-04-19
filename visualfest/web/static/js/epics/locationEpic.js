@@ -14,7 +14,7 @@ import {
   NULL,
 } from '../constants/actions';
 import {
-  ANIMATION_TIME
+  REVEALER_ANIMATION_TIME
 } from '../constants/hardcode';
 import {
   animateLocation,
@@ -27,18 +27,18 @@ export const animateLocationEpic = (action$, store) => (
       store.dispatch(animateLocation(action.payload));
       return Observable.of({ type: NULL });
     })
-    .delay(ANIMATION_TIME * 2.5)
+    .delay(REVEALER_ANIMATION_TIME * 2.5)
     .repeat()
   );
 
 export const changeLocationEpic = (action$, store) => (
   action$.ofType(LOCATION_CHANGE)
     .take(1)
-    .delay(ANIMATION_TIME)
+    .delay(REVEALER_ANIMATION_TIME)
     .flatMap(action => {
       store.dispatch(push(action.payload));
       return Observable.of({ type: NULL });
     })
-    .delay(ANIMATION_TIME * 1.5)
+    .delay(REVEALER_ANIMATION_TIME * 1.5)
     .repeat()
   );

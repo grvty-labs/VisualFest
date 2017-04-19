@@ -12,6 +12,8 @@ import {
   history,
 } from './store';
 import About from './containers/About.jsx';
+import BlotLeft from './containers/BlotLeft.jsx';
+import BlotRight from './containers/BlotRight.jsx';
 import Conferences from './containers/Conferences.jsx';
 import Contact from './containers/Contact.jsx';
 import Downbar from './containers/Downbar.jsx';
@@ -27,13 +29,13 @@ const store = configureStore();
 
 class VisualFest extends Component {
   render() {
-
     return (
-
       <Provider store={ store }>
         { /* ConnectedRouter will use the store from Provider automatically */ }
         <Router history={ history }>
           <div className='react-body'>
+            <BlotLeft />
+            <BlotRight />
             <Topbar />
             <div className='route-content'>
               {/* <CSSTransitionGroup
