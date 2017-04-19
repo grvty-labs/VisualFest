@@ -6,8 +6,8 @@ import ContentConference from '../components/ContentConferences.jsx';
 export default class Conferences extends Component {
   render () {
     return (
-      <div className = "borderMain">
-      <div className = "bodyMain">
+      <div className = "borderConferences">
+      <div className = "bodyConferences">
         <Title whiteTitle = { this.props.whiteTitle }/>
         <ContentConference conferences = { this.props.conferences }/>
     </div>

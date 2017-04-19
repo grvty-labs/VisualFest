@@ -1,20 +1,48 @@
 .conferencesContainer{
   display:flex;
+  background-color:#fff;
+  var(--font);
+}
+
+.conferences{
+  display:flex;
+  margin-right:2em;
 }
 
 .imageConference{
   max-height:240px;
   position:relative;
+  -webkit-filter: brightness(70%);
+   filter: brightness(70%);
 }
 
 .imageInformation{
+  margin-left:0.9rem;
   position:absolute;
+  margin-top:14%;
+  text-transform:uppercase;
+  font-family:
+  color:#f3f5f8;
+  font-weight:400;
+
 }
 
 .imageHour{
   position:absolute;
+  margin-left:0.9rem;
+  margin-top:2%;
+  font-family: var(--font);
+  color:#f3f5f8;
+  font-weight:300;
 }
 
 .imageName{
   position:absolute;
+  margin-top:16.5%;
+  margin-left:0.9rem;
+  font-family: var(--font);
+  color:#f3f5f8;
+  font-weight:300;
+  font-size:1em;
+
 }

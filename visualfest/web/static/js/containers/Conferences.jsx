@@ -10,6 +10,9 @@ function mapStateToProps(state) {
     { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
     { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
     { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
+    { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
+    { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
+    { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
   ],
   };
 }

@@ -5,7 +5,7 @@ export default class ContentConference extends Component{
   render() {
     var info = this.props.conferences.map(function (conference, index) {
       return (
-        <div key = {index} className = "conferencesContainer">
+        <div key = {index} className = "conferences">
           <img src = { conference.image } className = "imageConference"></img>
           <p className = "imageHour">{ conference.hour }</p>
           <h4 className = "imageInformation"> { conference.information }</h4>
@@ -15,7 +15,7 @@ export default class ContentConference extends Component{
     }
   );
     return (
-      <div>
+      <div className = "conferencesContainer">
         { info }
       </div>
     );
