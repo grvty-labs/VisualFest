@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
 @import '../waddles/settings';
 @import '../waddles/utils';
+@import './blot';
 @import './downbar';
 @import './revealer';
 @import './sidebar';
@@ -9,7 +11,6 @@
 @import './subtitle';
 @import './contentConferences';
 @import './conferences';
-@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
 /*@import "./visualfest/App";*/
 @lost flexbox flex;
 
@@ -17,6 +18,7 @@
     --pink: #ff004f;
     --yellow: #ffe100;
     --font:'Oswald', sans-serif;
+    --main-font:'Oswald', sans-serif;
     --white: #fff;
 }
 
@@ -34,6 +36,7 @@
 
 body {
   background-color: #11171E;
+  font-family: var(--font);
 }
 
 nav,
