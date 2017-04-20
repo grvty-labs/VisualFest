@@ -17,8 +17,8 @@ export default class ImagesGallery extends Component{
   render() {
     let images = this.props.images.map((image, index) => {
       return (
-        <div className = "containerImage">
-          <img key = { index } src = { image.src }
+        <div key = { index } className = "containerImage">
+          <img src = { image.src }
           className = { this.state.selected == index
             ? 'bigImageGallery' : 'imageGallery' }
           onClick = { () => this.changeSize(index)} />
