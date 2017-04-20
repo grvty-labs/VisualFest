@@ -1,18 +1,42 @@
-.gallery{
+.gallery {
   display: flex;
   flex-direction:column;
-  margin-left:10%;
+
+  @media (--phone), (--tablet) {
+    margin-left: 1rem;
+  }
+
+  @media (--desktop) {
+    margin-left: 10%;
+  }
 
   & .containerGallery{
     display:flex;
     flex-direction: row;
     flex-wrap:wrap;
 
-    & .imagesGallery{
+    & .containerImage{
       height:20em;
+      width:20em;
       margin-right:1rem;
       margin-bottom:1rem;
+      overflow:hidden;
+      display:flex;
+      flex-direction:row;
+      justify-content:center;
+
+      & .bigImageGallery{
+        transform: scale(1.5, 1.5);
+        -ms-transform: scale(1.5, 1.5);
+        -webkit-transform: scale(1.5, 1.5);
+      }
     }
   }
 
 }
+
+/*.bigImageGallery{
+  width:41em;
+  height:20em;
+  margin-right:1rem;
+}*/

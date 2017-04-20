@@ -5,6 +5,7 @@ import Conferences from '../components/Conferences.jsx';
 
 function mapStateToProps(state) {
   return {
+    owners: OWNERS_ALL,
     dates: [
       {
         whiteTitle: '27 ABRIL',

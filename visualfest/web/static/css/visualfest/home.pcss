@@ -1,7 +1,19 @@
 .bodyMain{
-  lost-column:1/2;
+  @media (--tablet), (--phone) {
+    lost-column: 1;
+  }
+
+  @media (--desktop) {
+    lost-column: 1/2;
+  }
 }
 
 .borderMain{
-  margin-left:10%;
+  @media (--tablet), (--phone) {
+    margin-left: 0;
+  }
+
+  @media (--desktop) {
+    margin-left:10%;
+  }
 }

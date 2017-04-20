@@ -13,7 +13,9 @@ export default class Workshops extends Component {
     return (
       <div className='bodylist' key={ index }>
         <Title whiteTitle={ date.whiteTitle }/>
-        <ContentConference conferences={ date.conferences }/>
+        <ContentConference
+          owners={ this.props.owners }
+          conferences={ date.conferences }/>
       </div>
     );
   }

@@ -5,10 +5,27 @@
   bottom: 0;
   display: flex;
   left: 0;
-  margin-left: 45px;
-  position: absolute;
   transform-origin: top left 0;
-  transform: rotate(270deg);
+
+  @media (--phone) {
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    transform: rotate(0deg);
+    width: 100%;
+  }
+
+  @media (--tablet) {
+    justify-content: flex-start;
+    margin-left: 5px;
+    position: fixed;
+    transform: rotate(270deg);
+    width: auto;
+  }
+
+  @media (--desktop) {
+    margin-left: 45px;
+  }
 
   & .sblinks {
     display: flex;
@@ -26,10 +43,15 @@
     & > img {
       cursor: pointer;
       max-width: 100%;
-      -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-      transform: rotate(90deg);
-      margin-top:30%;
+      margin-top: 30%;
+
+      @media (--phone) {
+        transform: rotate(0deg);
+      }
+
+      @media (--tablet) {
+        transform: rotate(90deg);
+      }
     }
   }
 }

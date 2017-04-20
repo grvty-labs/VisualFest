@@ -28,7 +28,7 @@ export default class Revealer extends Component {
   componentDidMount() {
     let options = {
       ...this.options,
-      delay: REVEALER_ANIMATION_TIME * 2,
+      delay: REVEALER_ANIMATION_TIME * 3,
       direction: 'reverse',
       loop: 1,
     };

@@ -51,7 +51,7 @@ var generateManifestPlugin = function (compiler) {
 };
 
 webpackConfiguration = {
-  devtool: PROD ? null : 'source-map',
+  devtool: PROD ? false : 'source-map',
   entry: entries,
 
   output: {
