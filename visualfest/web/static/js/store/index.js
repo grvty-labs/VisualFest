@@ -1,7 +1,10 @@
 import { compose, createStore, applyMiddleware } from 'redux';
 import createHistory from 'history/createBrowserHistory';
 import { routerMiddleware } from 'react-router-redux';
+import { createEpicMiddleware } from 'redux-observable';
+import epics from '../epics';
 import reducers from '../reducers';
+
 // import {
 //   DATA_INGREDIENTS,
 //   DATA_INPUTS,
@@ -10,9 +13,9 @@ import reducers from '../reducers';
 // } from '../constants/reducerNames';
 
 export const history = createHistory();
-// const epicMiddleware = createEpicMiddleware(epics);
+const epicMiddleware = createEpicMiddleware(epics);
 let middleware = [
-  // epicMiddleware,
+  epicMiddleware,
   routerMiddleware(history),
 ];
 

@@ -6,9 +6,11 @@
     "watch": "webpack --watch-stdin --progress --color"
   },
   "dependencies": {
-    "lodash": "^4.17.4",
+    "animejs": "^2.0.2",
     "phoenix": "file:deps/phoenix",
-    "phoenix_html": "file:deps/phoenix_html"
+    "phoenix_html": "file:deps/phoenix_html",
+    "redux-observable": "^0.14.1",
+    "rxjs": "^5.3.0"
   },
   "devDependencies": {
     "babel-core": "^6.24.0",
@@ -32,14 +34,11 @@
     "postcss-will-change": "^1.1.0",
     "postcss-zindex-order": "^1.0.1",
     "react": "^15.4.2",
-    "react-addons-css-transition-group": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",
     "react-router": "^4.0.0",
-    "react-router-dom": "^4.0.0-beta.8",
     "react-router-redux": "^5.0.0-alpha.4",
     "redux": "^3.6.0",
-    "redux-form": "^6.6.1",
     "redux-logger": "^3.0.1",
     "style-loader": "^0.16.1",
     "webpack": "^2.3.3"

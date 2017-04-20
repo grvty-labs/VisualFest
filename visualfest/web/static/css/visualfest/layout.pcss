@@ -1,6 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
 @import '../waddles/settings';
 @import '../waddles/utils';
+@import './blot';
+@import './downbar';
+@import './revealer';
+@import './sidebar';
+@import './title';
+@import './topbar';
+@import './home';
+@import './subtitle';
+@import './contentConferences';
+@import './conferences';
+@import './aboutUs';
+@import './gallery';
+/*@import "./visualfest/App";*/
+@lost flexbox flex;
 
+:root{
+    --pink: #ff004f;
+    --yellow: #ffe100;
+    --font:'Oswald', sans-serif;
+    --main-font:'Oswald', sans-serif;
+    --white: #fff;
+}
+
+.yellow{
+  color:var(--yellow);
+}
+
+.white{
+  color: var(--white);
+}
+
+.pink{
+  color:var(--pink);
+}
+
+body {
+  background-color: #11171E;
+  font-family: var(--font);
+}
+
+nav,
+div {
+  box-sizing: border-box;
+}
+
+.react-body {
+  height: 100vh;
+  max-height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  & .route-content {
+    height: calc(100vh - 155px);
+    max-height: calc(100vh - 155px);
+    overflow: auto;
+    position: absolute;
+    padding: 10px 0px;
+    margin: 0 80px;
+    width: calc(99.99vw - 160px);
+
+    & .route-enter {
+      opacity: 0.01;
+    }
+
+    & .route-enter.example-enter-active {
+      opacity: 1;
+      transition: opacity 500ms ease-in;
+    }
+
+    & .route-leave {
+      opacity: 1;
+    }
+
+    & .route-leave.route-leave-active {
+      opacity: 0.01;
+      transition: opacity 300ms ease-in;
+    }
+  }
+}
 
 .container {
     width: 100%;
