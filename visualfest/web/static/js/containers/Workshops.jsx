@@ -4,7 +4,18 @@ import { connect } from 'react-redux';
 import Workshops from '../components/Workshops.jsx';
 
 function mapStateToProps(state) {
-  return {};
+  return {
+    dates: [
+      {
+        whiteTitle: '27 ABRIL',
+        conferences: CONFERENCES_27,
+      },
+      {
+        whiteTitle: '28 ABRIL',
+        conferences: CONFERENCES_28,
+      },
+    ],
+  };
 }
 
 function mapDispatchToProps(dispatch) {
