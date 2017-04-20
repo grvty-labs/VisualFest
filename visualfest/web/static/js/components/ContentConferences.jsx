@@ -11,7 +11,7 @@ export default class ContentConference extends Component {
     return (
       <div key={ index } className='element'>
         <img src={ element.image } />
-        <p>{ element.datestart.toISOString() }</p>
+        <p>{ element.timestart }</p>
         <h4> { element.title }</h4>
         <h5>{ element.fullname }</h5>
       </div>);

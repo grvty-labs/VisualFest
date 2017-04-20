@@ -5,8 +5,8 @@
     {
       id: 1,
       title: 'Una revista cultural para el siglo XXI',
-      datestart: new Date('2017-04-27T10:00:00.000-06:00'),
-      dateend: new Date('2017-04-27T11:00:00.000-06:00'),
+      timestart: '10:00 hrs',
+      timeend: '11:00 hrs',
       fullname: 'Jacobo Zanella',
       image: '<%= static_path(@conn, "/images/owners/jacobo_zanella.jpg") %>',
       biography: [
@@ -23,8 +23,8 @@
     {
       id: 2,
       title: 'Ingredientes necesarios para preparar un delicioso guacamole',
-      datestart: new Date('2017-04-27T11:00:00.000-06:00'),
-      dateend: new Date('2017-04-27T12:00:00.000-06:00'),
+      timestart: '11:00 hrs',
+      timeend: '12:00 hrs',
       fullname: 'José Emmanuel Villalobos Vargas (Pepe Villawolf)',
       image: '<%= static_path(@conn, "/images/owners/pepe_villawolf.jpg") %>',
       biography: [
@@ -42,8 +42,8 @@
     {
       id: 3,
       title: '¿Cuánto cobrar por el diseño?',
-      datestart: new Date('2017-04-27T12:00:00.000-06:00'),
-      dateend: new Date('2017-04-27T13:00:00.000-06:00'),
+      timestart: '12:00 hrs',
+      timeend: '13:00 hrs',
       fullname: 'Rozendo Mondragón Ambrosio',
       image: '<%= static_path(@conn, "/images/owners/rozendo_mondragon.jpg") %>',
       biography: [
@@ -63,8 +63,8 @@
     {
       id: 4,
       title: 'Orígenes del concepto artístico',
-      datestart: new Date('2017-04-27T14:00:00.000-06:00'),
-      dateend: new Date('2017-04-27T15:00:00.000-06:00'),
+      timestart: '14:00 hrs',
+      timeend: '15:00 hrs',
       fullname: 'Tehani Farr',
       image: '<%= static_path(@conn, "/images/owners/tehani_farr.jpg") %>',
       biography: [
@@ -81,8 +81,8 @@
     {
       id: 5,
       title: 'Por qué los VFX son tan geniales.',
-      datestart: new Date('2017-04-27T16:00:00.000-06:00'),
-      dateend: new Date('2017-04-27T17:00:00.000-06:00'),
+      timestart: '16:00 hrs',
+      timeend: '17:00 hrs',
       fullname: 'Luis Alberto Gallegos Torres “Desman”',
       image: '<%= static_path(@conn, "/images/owners/alberto_gallegos.jpg") %>',
       biography: [
@@ -102,8 +102,8 @@
     {
       id: 7,
       title: '(falta por definir)',
-      datestart: new Date('2017-04-28T11:00:00.000-06:00'),
-      dateend: new Date('2017-04-28T12:00:00.000-06:00'),
+      timestart: '11:00 hrs',
+      timeend: '12:00 hrs',
       fullname: 'Jesús Rodolfo Baquier “Mostacho”',
       image: '<%= static_path(@conn, "/images/owners/jesus_rodolfo.jpg") %>',
       biography: [
@@ -121,8 +121,8 @@
     {
       id: 9,
       title: 'Diseño paramétrico',
-      datestart: new Date('2017-04-28T15:00:00.000-06:00'),
-      dateend: new Date('2017-04-28T16:00:00.000-06:00'),
+      timestart: '15:00 hrs',
+      timeend: '16:00 hrs',
       fullname: 'Dr. Manuel Guerrero Salinas',
       image: '<%= static_path(@conn, "/images/owners/manuel_guerrero.jpg") %>',
       biography: [
@@ -142,8 +142,8 @@
     {
       id: 10,
       title: 'Emprendiendo el camino del ilustrador',
-      datestart: new Date('2017-04-28T16:00:00.000-06:00'),
-      dateend: new Date('2017-04-28T17:00:00.000-06:00'),
+      timestart: '16:00 hrs',
+      timeend: '17:00 hrs',
       fullname: 'Diego Morali Romo',
       image: '<%= static_path(@conn, "/images/owners/diego_morali.jpg") %>',
       biography: [
@@ -161,8 +161,8 @@
     {
       id: 11,
       title: 'Diseño Editorial, como darle la vuelta a la tortilla sin quemarse las manos',
-      datestart: new Date('2017-04-28T17:00:00.000-06:00'),
-      dateend: new Date('2017-04-28T18:00:00.000-06:00'),
+      timestart: '17:00 hrs',
+      timeend: '18:00 hrs',
       fullname: 'Oscar Rodríguez Amado',
       image: '<%= static_path(@conn, "/images/owners/oscar_rodriguez.jpg") %>',
       biography: [
