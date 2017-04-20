@@ -1,12 +1,11 @@
-<div id='react-content'></div>
+<div id='react-content'>
+  <div class='loading'></div>
+</div>
 
 <script>
-  var CONFERENCES_27 = [
-    {
+  var OWNERS_ALL = {
+    1: {
       id: 1,
-      title: 'Una revista cultural para el siglo XXI',
-      datestart: new Date('2017-04-27T10:00:00.000-06:00'),
-      dateend: new Date('2017-04-27T11:00:00.000-06:00'),
       fullname: 'Jacobo Zanella',
       image: '<%= static_path(@conn, "/images/owners/jacobo_zanella.jpg") %>',
       biography: [
@@ -15,16 +14,9 @@
       links: [
         'www.jacobozanella.com',
       ],
-      area: 'Edición de publicaciones y diseño editorial',
-      description: [
-        'Se hará una ponencia sobre Lapham’s Quarterly, una revista de historia, arte y literatura que desarrolla un tema a través de la edición de textos y arte de los últimos cuatro mil años. Es editada por el periodista estadounidense Lewis Lapham desde 2007. Cada edición trimestral aborda un tema universal como guerra, religión o dinero. Se analizará desde la edición, el diseño gráfico y como enciclopedia de arte.'
-      ],
     },
-    {
-      id: 2,
-      title: 'Ingredientes necesarios para preparar un delicioso guacamole',
-      datestart: new Date('2017-04-27T11:00:00.000-06:00'),
-      dateend: new Date('2017-04-27T12:00:00.000-06:00'),
+
+    2: {
       fullname: 'José Emmanuel Villalobos Vargas (Pepe Villawolf)',
       image: '<%= static_path(@conn, "/images/owners/pepe_villawolf.jpg") %>',
       biography: [
@@ -34,16 +26,9 @@
         'www.instagram.com/villawolfshots',
         'www.behance.net/villawolfmedia',
       ],
-      area: 'Motion Design y 3D',
-      description: [
-        'Hablar un poco sobre el proceso que debe seguir un estudiante para pasar del ámbito profesional y no perderse en el camino, hablar un poco de mi trayectoria, cómo un reflejo de estos pasos y de las habilidades básicas y caminos debes logar, todo esto haciendo alusión a un guacamole cómo un proceso final.',
-      ],
     },
-    {
-      id: 3,
-      title: '¿Cuánto cobrar por el diseño?',
-      datestart: new Date('2017-04-27T12:00:00.000-06:00'),
-      dateend: new Date('2017-04-27T13:00:00.000-06:00'),
+
+    3: {
       fullname: 'Rozendo Mondragón Ambrosio',
       image: '<%= static_path(@conn, "/images/owners/rozendo_mondragon.jpg") %>',
       biography: [
@@ -55,16 +40,9 @@
       links: [
         'www.planux.com.mx/roz.php',
       ],
-      area: 'Diseño gráfico y web',
-      description: [
-        'Demuestra que el diseño puede ser negocio.',
-      ],
     },
-    {
-      id: 4,
-      title: 'Orígenes del concepto artístico',
-      datestart: new Date('2017-04-27T14:00:00.000-06:00'),
-      dateend: new Date('2017-04-27T15:00:00.000-06:00'),
+
+    4: {
       fullname: 'Tehani Farr',
       image: '<%= static_path(@conn, "/images/owners/tehani_farr.jpg") %>',
       biography: [
@@ -73,16 +51,20 @@
       links: [
         'https://www.facebook.com/artoftehanifarr/',
       ],
-      area: 'Ilustración y arte conceptual',
-      description: [
-        'Plática sobre cómo fue creciendo y desarrollándose mi concepto artístico.',
+    },
+
+    5: {
+      fullname: 'Pendiente',
+      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      biography: [
+        'Pendiente',
+      ],
+      links: [
+        'http://grvty.digital/',
       ],
     },
-    {
-      id: 5,
-      title: 'Por qué los VFX son tan geniales.',
-      datestart: new Date('2017-04-27T16:00:00.000-06:00'),
-      dateend: new Date('2017-04-27T17:00:00.000-06:00'),
+
+    6: {
       fullname: 'Luis Alberto Gallegos Torres “Desman”',
       image: '<%= static_path(@conn, "/images/owners/alberto_gallegos.jpg") %>',
       biography: [
@@ -92,37 +74,69 @@
       links: [
         'https://www.behance.net/DesmanVFX',
       ],
-      area: 'Diseño, 3D y VFX',
-      description: [
-        'El mundo de los VFX es un mundo vasto para la exploración del diseño en todas sus formas. Es un gran lugar para aprender, expandirse y un mercado que se debe aprovechar en México.',
+    },
+
+    7: {
+      fullname: 'Studio Vive',
+      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      biography: [
+        'Pendiente',
+      ],
+      links: [
+        'http://grvty.digital/',
       ],
     },
-  ];
-  var CONFERENCES_28 = [
-    {
-      id: 7,
-      title: '(falta por definir)',
-      datestart: new Date('2017-04-28T11:00:00.000-06:00'),
-      dateend: new Date('2017-04-28T12:00:00.000-06:00'),
-      fullname: 'Jesús Rodolfo Baquier “Mostacho”',
-      image: '<%= static_path(@conn, "/images/owners/jesus_rodolfo.jpg") %>',
+
+    8: {
+      fullname: ' Roberto  Soriano  Esquivel  "Robertoon"',
+      image: '<%= static_path(@conn, "/images/owners/roberto_soriano.jpg") %>',
       biography: [
-        '(por definir)',
+        'Desde que tengo memoria el diseño y la ilustración han sido mi estilo de vida, comenzando con los obligados rayones en mis libretas y paredes de mi cuarto, hasta la entrega de mi primer proyecto profesional. Soy egresado de la Universidad Autónoma del estado de Hidalgo de la Lic. en Diseño Gráfico. He trabajado para diversas agencias de publicidad realizando artes para clientes como Michelin, Starbucks, Huevocartoon, entre otros. Actualmente soy Ilustrador y Cofundador del estudio MIDOMI en la Cd. De Querétaro ',
+      ],
+      links: [
+        'www.behance.net/RobertoonIlustracion',
+        'www.midomiestudio.com',
+        'contacto@midomiestudio.com',
+        'www.facebook.com/RobertoonIlustracion',
+      ],
+    },
+
+    9: {
+      fullname: 'Jesús Rodolfo Baquier “Mostacho”',
+      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      // image: '<%= static_path(@conn, "/images/owners/jesus_rodolfo.jpg") %>',
+      biography: [
+        'Pendiente',
       ],
       links: [
         'https://www.facebook.com/MOSTASHO/',
         'https://www.behance.net/rodolfobaquier',
       ],
-      area: 'Ilustración',
-      description: [
-        '(Por definir)',
+    },
+
+    10: {
+      fullname: 'Luis Almeida',
+      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      biography: [
+        'Pendiente',
+      ],
+      links: [
+        'http://grvty.digital/',
       ],
     },
-    {
-      id: 9,
-      title: 'Diseño paramétrico',
-      datestart: new Date('2017-04-28T15:00:00.000-06:00'),
-      dateend: new Date('2017-04-28T16:00:00.000-06:00'),
+
+    11: {
+      fullname: 'Canalla Estudio',
+      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      biography: [
+        'Pendiente',
+      ],
+      links: [
+        'http://grvty.digital/',
+      ],
+    },
+
+    12: {
       fullname: 'Dr. Manuel Guerrero Salinas',
       image: '<%= static_path(@conn, "/images/owners/manuel_guerrero.jpg") %>',
       biography: [
@@ -134,16 +148,9 @@
         'http://bluetypo.com',
         'http://be.net/bluetypo',
       ],
-      area: 'Tipografía',
-      description: [
-        'En esta presentación se define el proceso de diseño paramétrico y sus aplicaciones en diversos campos, que van desde el diseño hasta la tipografía, además se muestran ejemplos aplicados al diseño de tipografía.',
-      ],
     },
-    {
-      id: 10,
-      title: 'Emprendiendo el camino del ilustrador',
-      datestart: new Date('2017-04-28T16:00:00.000-06:00'),
-      dateend: new Date('2017-04-28T17:00:00.000-06:00'),
+
+    13: {
       fullname: 'Diego Morali Romo',
       image: '<%= static_path(@conn, "/images/owners/diego_morali.jpg") %>',
       biography: [
@@ -153,16 +160,20 @@
         'https://www.behance.net/dimorali',
         'https://www.facebook.com/rudimorali',
       ],
-      area: 'Ilustración',
-      description: [
-        'En esta conferencia se abordará el cómo emprender una carrera en la ilustración como una guía básica para la supervivencia en el medio.',
+    },
+
+    14: {
+      fullname: 'Jorge del Buenn Unna',
+      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      biography: [
+        'Pendiente',
+      ],
+      links: [
+        'http://grvty.digital/',
       ],
     },
-    {
-      id: 11,
-      title: 'Diseño Editorial, como darle la vuelta a la tortilla sin quemarse las manos',
-      datestart: new Date('2017-04-28T17:00:00.000-06:00'),
-      dateend: new Date('2017-04-28T18:00:00.000-06:00'),
+
+    15: {
       fullname: 'Oscar Rodríguez Amado',
       image: '<%= static_path(@conn, "/images/owners/oscar_rodriguez.jpg") %>',
       biography: [
@@ -171,10 +182,225 @@
       links: [
         'https://www.behance.net/portamalmar',
       ],
+    },
+
+    16: {
+      fullname: 'Sociedad Fantmas',
+      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      biography: [
+        'Pendiente',
+      ],
+      links: [
+        'http://grvty.digital/',
+      ],
+    },
+
+    17: {
+      fullname: 'Javier Medellin "Jilipollo"',
+      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      biography: [
+        'Pendiente',
+      ],
+      links: [
+        'http://grvty.digital/',
+      ],
+    },
+  };
+
+  var CONFERENCES_27 = [
+    {
+      owner: 1,
+      title: 'Una revista cultural para el siglo XXI',
+      timestart: '10:00 hrs',
+      timeend: '11:00 hrs',
+      area: 'Edición de publicaciones y diseño editorial',
+      description: [
+        'Se hará una ponencia sobre Lapham’s Quarterly, una revista de historia, arte y literatura que desarrolla un tema a través de la edición de textos y arte de los últimos cuatro mil años. Es editada por el periodista estadounidense Lewis Lapham desde 2007. Cada edición trimestral aborda un tema universal como guerra, religión o dinero. Se analizará desde la edición, el diseño gráfico y como enciclopedia de arte.'
+      ],
+    },
+    {
+      owner: 2,
+      title: 'Ingredientes necesarios para preparar un delicioso guacamole',
+      timestart: '11:00 hrs',
+      timeend: '12:00 hrs',
+      area: 'Motion Design y 3D',
+      description: [
+        'Hablar un poco sobre el proceso que debe seguir un estudiante para pasar del ámbito profesional y no perderse en el camino, hablar un poco de mi trayectoria, cómo un reflejo de estos pasos y de las habilidades básicas y caminos debes logar, todo esto haciendo alusión a un guacamole cómo un proceso final.',
+      ],
+    },
+    {
+      owner: 3,
+      title: '¿Cuánto cobrar por el diseño?',
+      timestart: '12:00 hrs',
+      timeend: '13:00 hrs',
+      area: 'Diseño gráfico y web',
+      description: [
+        'Demuestra que el diseño puede ser negocio.',
+      ],
+    },
+    {
+      owner: 4,
+      title: 'Orígenes del concepto artístico',
+      timestart: '14:00 hrs',
+      timeend: '15:00 hrs',
+      area: 'Ilustración y arte conceptual',
+      description: [
+        'Plática sobre cómo fue creciendo y desarrollándose mi concepto artístico.',
+      ],
+    },
+    {
+      owner: 5,
+      title: 'Pendiente',
+      timestart: '15:00 hrs',
+      timeend: '16:00 hrs',
+      area: 'Pendiente',
+      description: [
+        'Pendiente',
+      ],
+    },
+    {
+      owner: 6,
+      title: 'Por qué los VFX son tan geniales.',
+      timestart: '16:00 hrs',
+      timeend: '17:00 hrs',
+      area: 'Diseño, 3D y VFX',
+      description: [
+        'El mundo de los VFX es un mundo vasto para la exploración del diseño en todas sus formas. Es un gran lugar para aprender, expandirse y un mercado que se debe aprovechar en México.',
+      ],
+    },
+    {
+      owner: 7,
+      title: 'Pendiente',
+      timestart: '17:00 hrs',
+      timeend: '18:00 hrs',
+      area: 'Pendiente',
+      description: [
+        'Pendiente',
+      ],
+    },
+  ];
+
+  var CONFERENCES_28 = [
+    {
+      owner: 8,
+      title: 'Guía práctica de Illustrator',
+      timestart: '10:00 hrs',
+      timeend: '11:00 hrs',
+      area: 'Ilustración',
+      description: [
+        'Partimos en mostrar como es el proceso de la ilustración, desde el boceto hasta la entrega final, como 2do punto importante, me enfocaré en la creación de un portafilio digital, personal, así como una serie de herramientas para darle mayor fuerza y alcance ',
+      ],
+    },
+    {
+      owner: 9,
+      title: 'Pendiente',
+      timestart: '11:00 hrs',
+      timeend: '12:00 hrs',
+      area: 'Ilustración',
+      description: [
+        'Pendiente',
+      ],
+    },
+    {
+      owner: 10,
+      title: 'Pendiente',
+      timestart: '12:00 hrs',
+      timeend: '13:00 hrs',
+      area: 'Pendiente',
+      description: [
+        'Pendiente',
+      ],
+    },
+    {
+      owner: 11,
+      title: 'Pendiente',
+      timestart: '14:00 hrs',
+      timeend: '15:00 hrs',
+      area: 'Pendiente',
+      description: [
+        'Pendiente',
+      ],
+    },
+    {
+      owner: 12,
+      title: 'Diseño paramétrico',
+      timestart: '15:00 hrs',
+      timeend: '16:00 hrs',
+      area: 'Tipografía',
+      description: [
+        'En esta presentación se define el proceso de diseño paramétrico y sus aplicaciones en diversos campos, que van desde el diseño hasta la tipografía, además se muestran ejemplos aplicados al diseño de tipografía.',
+      ],
+    },
+    {
+      owner: 13,
+      title: 'Emprendiendo el camino del ilustrador',
+      timestart: '16:00 hrs',
+      timeend: '17:00 hrs',
+      area: 'Ilustración',
+      description: [
+        'En esta conferencia se abordará el cómo emprender una carrera en la ilustración como una guía básica para la supervivencia en el medio.',
+      ],
+    },
+    {
+      owner: 14,
+      title: 'Pendiente',
+      timestart: '17:00 hrs',
+      timeend: '18:00 hrs',
+      area: 'Pendiente',
+      description: [
+        'Pendiente',
+      ],
+    },
+    {
+      owner: 15,
+      title: 'Diseño Editorial, como darle la vuelta a la tortilla sin quemarse las manos',
+      timestart: '18:00 hrs',
+      timeend: '19:00 hrs',
       area: 'Editorial',
       description: [
         '¿El mundo de los impresos está en crisis? ¿Cuál es papel de los medios de comunicación en papel ante la obscena cantidad de información que consumimos por minuto en internet? Renovarse o morir en el intento, el reto de las revistas en México.',
       ],
+    },
+  ];
+
+  var WORKSHOPS_27 = [
+    {
+      owner: 11,
+      title: 'Pendiente',
+      area: 'Web',
+      timestart: '11:00 hrs',
+      timeend: '15:00 hrs',
+    },
+    {
+      owner: 16,
+      title: 'Mira mamá estoy animado',
+      area: 'Animación e Ilustración',
+      timestart: '11:00 hrs',
+      timeend: '15:00 hrs',
+    },
+  ];
+
+  var WORKSHOPS_28 = [
+    {
+      owner: 16,
+      title: 'Mira mamá estoy animado',
+      area: 'Animación e Ilustración',
+      timestart: '11:00 hrs',
+      timeend: '15:00 hrs',
+    },
+    {
+      owner: 17,
+      title: 'Tres de ilustración para llevar, por favor',
+      area: 'Ilustración',
+      timestart: '11:00 hrs',
+      timeend: '15:00 hrs',
+    },
+    {
+      owner: 2,
+      title: 'Las curvas son tus amigas, no tus enemigas',
+      area: 'Motion Graphics',
+      timestart: '11:00 hrs',
+      timeend: '15:00 hrs',
     },
   ];
 

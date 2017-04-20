@@ -8,12 +8,13 @@ export default class ContentConference extends Component {
   }
 
   renderContainer(element, index) {
+    const { owners } = this.props;
     return (
       <div key={ index } className='element'>
-        <img src={ element.image } />
-        <p>{ element.datestart.toISOString() }</p>
+        <img src={ owners[element.owner].image } />
+        <p>{ element.timestart }</p>
         <h4> { element.title }</h4>
-        <h5>{ element.fullname }</h5>
+        <h5>{ owners[element.owner].fullname }</h5>
       </div>);
   }
 

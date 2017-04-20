@@ -5,14 +5,15 @@ import Workshops from '../components/Workshops.jsx';
 
 function mapStateToProps(state) {
   return {
+    owners: OWNERS_ALL,
     dates: [
       {
         whiteTitle: '27 ABRIL',
-        conferences: CONFERENCES_27,
+        conferences: WORKSHOPS_27,
       },
       {
         whiteTitle: '28 ABRIL',
-        conferences: CONFERENCES_28,
+        conferences: WORKSHOPS_28,
       },
     ],
   };

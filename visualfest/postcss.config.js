@@ -1,6 +1,8 @@
 module.exports = {
   plugins: [
+    require('postcss-custom-media'),
     require('postcss-partial-import')({ extension: '.pcss' }),
+    require('postcss-nested'),
     require('lost'),
     require('postcss-cssnext'),
     require('postcss-mixins'),

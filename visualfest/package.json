@@ -9,6 +9,8 @@
     "animejs": "^2.0.2",
     "phoenix": "file:deps/phoenix",
     "phoenix_html": "file:deps/phoenix_html",
+    "postcss-custom-media": "^5.0.1",
+    "postcss-nested": "^1.0.1",
     "redux-observable": "^0.14.1",
     "rxjs": "^5.3.0"
   },
