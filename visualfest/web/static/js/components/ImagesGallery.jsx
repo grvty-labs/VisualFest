@@ -17,10 +17,12 @@ export default class ImagesGallery extends Component{
   render() {
     let images = this.props.images.map((image, index) => {
       return (
-        <img key = { index } src = { image.src }
+        <div className = "containerImage">
+          <img key = { index } src = { image.src }
           className = { this.state.selected == index
-            ? 'bigImageGallery' : 'imagesGallery' }
+            ? 'bigImageGallery' : 'imageGallery' }
           onClick = { () => this.changeSize(index)} />
+          </div>
       );
     }
   );
