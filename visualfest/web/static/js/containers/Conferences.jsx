@@ -5,15 +5,24 @@ import Conferences from '../components/Conferences.jsx';
 
 function mapStateToProps(state) {
   return {
-    whiteTitle: '26 ABRIL',
-    conferences: [
-    { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
-    { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
-    { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
-    { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
-    { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
-    { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
-  ],
+    dates: [
+      {
+        whiteTitle: '27 ABRIL',
+        conferences: CONFERENCES_27,
+        // [
+        //   { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
+        //   { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
+        //   { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
+        //   { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
+        //   { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
+        //   { image: 'https://goo.gl/vkdnFs', information: "Titulo de la Conferencia", name: 'Nombre del ponente', hour: 'Horario' },
+        // ],
+      },
+      {
+        whiteTitle: '28 ABRIL',
+        conferences: CONFERENCES_28,
+      },
+    ],
   };
 }
 

@@ -1,44 +1,53 @@
-.conferencesContainer{
-  display:flex;
-  background-color:#fff;
-}
+.conferencesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 1rem;
+  width: 100%;
 
-.conferences{
-  display:flex;
-  margin-right:2em;
-}
+  & .element {
+    display: block;
+    lost-column: 1/3;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    position: relative;
 
-.imageConference{
-  max-height:240px;
-  position:relative;
-  -webkit-filter: brightness(70%);
-   filter: brightness(70%);
-}
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
 
-.imageInformation{
-  margin-left:0.9rem;
-  position:absolute;
-  margin-top:14%;
-  text-transform:uppercase;
-  color:#f3f5f8;
-  font-weight:400;
+    & > img {
+      width: 100%;
+      /*-webkit-filter: brightness(70%);
+      filter: brightness(70%);*/
+    }
 
-}
+    & > h4 {
+      bottom: 3.5rem;
+      color: #f3f5f8;
+      font-weight: 400;
+      margin-left: 0.9rem;
+      position: absolute;
+      text-transform: uppercase;
+      margin-bottom: 0;
+    }
 
-.imageHour{
-  position:absolute;
-  margin-left:0.9rem;
-  margin-top:2%;
-  color:#f3f5f8;
-  font-weight:300;
-}
+    & > h5 {
+      bottom: 1.5rem;
+      color: #f3f5f8;
+      font-size: 1em;
+      font-weight: 300;
+      margin-left: 0.9rem;
+      position: absolute;
+      margin-bottom: 0;
+    }
 
-.imageName{
-  position:absolute;
-  margin-top:16.5%;
-  margin-left:0.9rem;
-  color:#f3f5f8;
-  font-weight:300;
-  font-size:1em;
+    & > p {
+      position: absolute;
+      margin-left:0.9rem;
+      margin-top:2%;
+      color:#f3f5f8;
+      font-weight:300;
 
+    }
+  }
 }

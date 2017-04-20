@@ -1,21 +1,26 @@
 "use strct";
 import React, { Component } from 'react';
 
-export default class ContentConference extends Component{
-  render() {
-    var info = this.props.conferences.map(function (conference, index) {
-      return (
-        <div key = {index} className = "conferences">
-          <img src = { conference.image } className = "imageConference"></img>
-          <p className = "imageHour">{ conference.hour }</p>
-          <h4 className = "imageInformation"> { conference.information }</h4>
-          <h5 className = "imageName">{ conference.name }</h5>
-        </div>
-      );
-    }
-  );
+export default class ContentConference extends Component {
+  constructor(props) {
+    super(props);
+    this.renderContainer = this.renderContainer.bind(this);
+  }
+
+  renderContainer(element, index) {
     return (
-      <div className = "conferencesContainer">
+      <div key={ index } className='element'>
+        <img src={ element.image } />
+        <p>{ element.datestart.toISOString() }</p>
+        <h4> { element.title }</h4>
+        <h5>{ element.fullname }</h5>
+      </div>);
+  }
+
+  render() {
+    let info = this.props.conferences.map(this.renderContainer);
+    return (
+      <div className='conferencesContainer'>
         { info }
       </div>
     );
