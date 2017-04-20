@@ -1,0 +1,6 @@
+[submodule "visualfest/web/static/css/waddles"]
+	path = visualfest/web/static/css/waddles
+	url = https://github.com/grvty-labs/Waddles
+[submodule "visualfest/web/static/js/grunkle"]
+	path = visualfest/web/static/js/grunkle
+	url = https://github.com/grvty-labs/Grunkle.git

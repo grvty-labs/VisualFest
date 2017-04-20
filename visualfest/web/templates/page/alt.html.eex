@@ -1,0 +1,182 @@
+<div id='react-content'></div>
+
+<script>
+  var CONFERENCES_27 = [
+    {
+      id: 1,
+      title: 'Una revista cultural para el siglo XXI',
+      datestart: new Date('2017-04-27T10:00:00.000-06:00'),
+      dateend: new Date('2017-04-27T11:00:00.000-06:00'),
+      fullname: 'Jacobo Zanella',
+      image: '<%= static_path(@conn, "/images/owners/jacobo_zanella.jpg") %>',
+      biography: [
+        'Jacobo Zanella (Guanajuato, 1976) se ha dedicado al diseño gráfico los últimos veinte años, especializándose gradualmente en el diseño editorial y la fotografía. Ha editado, diseñado y publicado libros documentales y revistas culturales, entre los que se podrían destacar la memoria fotográfica Querétaro Zona de Monumentos y la publicación bimestral de cultura urbana del centro de México Sada y el Bombón. En 2016 finalizó la Maestría en Cultura Contemporánea en la Universidad Complutense de Madrid, donde se especializó en edición.',
+      ],
+      links: [
+        'www.jacobozanella.com',
+      ],
+      area: 'Edición de publicaciones y diseño editorial',
+      description: [
+        'Se hará una ponencia sobre Lapham’s Quarterly, una revista de historia, arte y literatura que desarrolla un tema a través de la edición de textos y arte de los últimos cuatro mil años. Es editada por el periodista estadounidense Lewis Lapham desde 2007. Cada edición trimestral aborda un tema universal como guerra, religión o dinero. Se analizará desde la edición, el diseño gráfico y como enciclopedia de arte.'
+      ],
+    },
+    {
+      id: 2,
+      title: 'Ingredientes necesarios para preparar un delicioso guacamole',
+      datestart: new Date('2017-04-27T11:00:00.000-06:00'),
+      dateend: new Date('2017-04-27T12:00:00.000-06:00'),
+      fullname: 'José Emmanuel Villalobos Vargas (Pepe Villawolf)',
+      image: '<%= static_path(@conn, "/images/owners/pepe_villawolf.jpg") %>',
+      biography: [
+        'José Villalobos se desarrolla profesionalmente en Motion Designer Long Summer Days en las áreas Conceptualización, Visualización de Spots de Publicidad, Diseño, Motion graphics, Modelado, Texturizado 3D y Animación; Generando spots para: Ocesa, Cuervo, Weber Shandwick, Gerber (Nestle) y Banamex.',
+      ],
+      links: [
+        'www.instagram.com/villawolfshots',
+        'www.behance.net/villawolfmedia',
+      ],
+      area: 'Motion Design y 3D',
+      description: [
+        'Hablar un poco sobre el proceso que debe seguir un estudiante para pasar del ámbito profesional y no perderse en el camino, hablar un poco de mi trayectoria, cómo un reflejo de estos pasos y de las habilidades básicas y caminos debes logar, todo esto haciendo alusión a un guacamole cómo un proceso final.',
+      ],
+    },
+    {
+      id: 3,
+      title: '¿Cuánto cobrar por el diseño?',
+      datestart: new Date('2017-04-27T12:00:00.000-06:00'),
+      dateend: new Date('2017-04-27T13:00:00.000-06:00'),
+      fullname: 'Rozendo Mondragón Ambrosio',
+      image: '<%= static_path(@conn, "/images/owners/rozendo_mondragon.jpg") %>',
+      biography: [
+        'Formación profesional en Diseño Gráfico con estudios de posgrado en la Especialidad en Diseño Web, ambos en la Universidad Autónoma de Querétaro.',
+        'Su trabajo profesional incluye diseño y desarrollo de proyectos web y multimedia para empresas como Sika, Osel, el Tecnológico de Monterrey, centros de investigación como la UMEST y diferentes PyMES.',
+        'Fue co-fundador y coordinador de proyectos web en la empresa REMO Diseño e Innovación siendo responsable del diseño de interfaces, prototipos, maquetación y programación de proyectos web, así como del diseño e implementación de procesos de desarrollo.',
+        'Ha sido profesor en el Tec de Monterrey impartiendo la clase "Fundamentos de Diseño Interactivo" en la División de Ingeniería y Arquitectura.Actualmente es fundador y consultor de Planux y es Diseñador Web en Wingu Networks.'
+      ],
+      links: [
+        'www.planux.com.mx/roz.php',
+      ],
+      area: 'Diseño gráfico y web',
+      description: [
+        'Demuestra que el diseño puede ser negocio.',
+      ],
+    },
+    {
+      id: 4,
+      title: 'Orígenes del concepto artístico',
+      datestart: new Date('2017-04-27T14:00:00.000-06:00'),
+      dateend: new Date('2017-04-27T15:00:00.000-06:00'),
+      fullname: 'Tehani Farr',
+      image: '<%= static_path(@conn, "/images/owners/tehani_farr.jpg") %>',
+      biography: [
+        'Tehani lleva 3 años de artista conceptual e ilustradora profesional, ha trabajado con marcas internacionales de todo el mundo, festivales de música como Hell and Heaven en exhibiciones, con blizzard portada para libro de world of warcraft, además de portadas y merchingdizing para bandas como kreator, ha tenido exibiciones en todo el mundo, uk, Japón, tokyo, suiza, parís, etc. su trabajo más reciente fue expuesto en el museo de giger en la ciudad de gruyeres.',
+      ],
+      links: [
+        'https://www.facebook.com/artoftehanifarr/',
+      ],
+      area: 'Ilustración y arte conceptual',
+      description: [
+        'Plática sobre cómo fue creciendo y desarrollándose mi concepto artístico.',
+      ],
+    },
+    {
+      id: 5,
+      title: 'Por qué los VFX son tan geniales.',
+      datestart: new Date('2017-04-27T16:00:00.000-06:00'),
+      dateend: new Date('2017-04-27T17:00:00.000-06:00'),
+      fullname: 'Luis Alberto Gallegos Torres “Desman”',
+      image: '<%= static_path(@conn, "/images/owners/alberto_gallegos.jpg") %>',
+      biography: [
+        'Tengo 15 años de experiencia formal en el área de la animación 3D generalista. Por 7 años dirigí mi propio estudio de animación, llamado Crudeladies, como co-Director General, y Director del área de 3D y vfx.',
+        'Ahora trabajo en una nueva etapa como artista independiente; explorando, aplicando y aprendiendo la forma más compleja de animación con la que me he encontrado. Sistemas procedurales.',
+      ],
+      links: [
+        'https://www.behance.net/DesmanVFX',
+      ],
+      area: 'Diseño, 3D y VFX',
+      description: [
+        'El mundo de los VFX es un mundo vasto para la exploración del diseño en todas sus formas. Es un gran lugar para aprender, expandirse y un mercado que se debe aprovechar en México.',
+      ],
+    },
+  ];
+  var CONFERENCES_28 = [
+    {
+      id: 7,
+      title: '(falta por definir)',
+      datestart: new Date('2017-04-28T11:00:00.000-06:00'),
+      dateend: new Date('2017-04-28T12:00:00.000-06:00'),
+      fullname: 'Jesús Rodolfo Baquier “Mostacho”',
+      image: '<%= static_path(@conn, "/images/owners/jesus_rodolfo.jpg") %>',
+      biography: [
+        '(por definir)',
+      ],
+      links: [
+        'https://www.facebook.com/MOSTASHO/',
+        'https://www.behance.net/rodolfobaquier',
+      ],
+      area: 'Ilustración',
+      description: [
+        '(Por definir)',
+      ],
+    },
+    {
+      id: 9,
+      title: 'Diseño paramétrico',
+      datestart: new Date('2017-04-28T15:00:00.000-06:00'),
+      dateend: new Date('2017-04-28T16:00:00.000-06:00'),
+      fullname: 'Dr. Manuel Guerrero Salinas',
+      image: '<%= static_path(@conn, "/images/owners/manuel_guerrero.jpg") %>',
+      biography: [
+        'Diseñador Gráfico de nacionalidad Mexicana, egresado de la Universidad Autónoma de San Luis Potosí. Actualmente es catedrático de la Facultad del Hábitat de la UASLP y doctor en Arquitectura, Diseño y Urbanismo por la Universidad Autónoma de Morelos. Trabaja como freelanceen BlueTypo, estudio de diseño especializado en tipografía y comunicación interactiva. Es miembro de la Association Typographique International (ATypI), International Association of Designers(IAD)y colaborador en la fundidoratipográfica Cocijotype.',
+        'En el año 2009 obtuvo el certificado de excelencia en diseño tipográfico, otorgado por el TypeDirectors Club NY, en el 2010 fue nominado a recibir el Prize of Prizes Design Award; la máxima distinción al diseño otorgada por el gobierno Alemán. De igual manera obtuvo el certificado de excelencia en diseño tipográfico en la Cuarta Bienal de Tipografía Tipos Latinos2010 y seleccionado en LaBienal del Cartel Bolivia BICeBé 2013, 2015 y recientemente premiado con el Silver A\' Design Award en Italia.',
+        'Ha impartido conferencias y talleres de experimentación a nivel nacional e internacional en TEDx, Palermo, Bienal de Letras Latinas, La Letra Ilustra, ProDiseño, entre otros, su trabajo se ha dado a conocer en diferentes publicaciones, entre las que destaca el Font Feed de Font Shop, I love typography,Typography Served, Fubiz, Unos tipos duros, The Anual Typography 30, Typodarium 2010,2011 y 2012, la revista Digital Arts y Page Magazine, Tiypo, Communication Arts, entre otras.',
+      ],
+      links: [
+        'http://bluetypo.com',
+        'http://be.net/bluetypo',
+      ],
+      area: 'Tipografía',
+      description: [
+        'En esta presentación se define el proceso de diseño paramétrico y sus aplicaciones en diversos campos, que van desde el diseño hasta la tipografía, además se muestran ejemplos aplicados al diseño de tipografía.',
+      ],
+    },
+    {
+      id: 10,
+      title: 'Emprendiendo el camino del ilustrador',
+      datestart: new Date('2017-04-28T16:00:00.000-06:00'),
+      dateend: new Date('2017-04-28T17:00:00.000-06:00'),
+      fullname: 'Diego Morali Romo',
+      image: '<%= static_path(@conn, "/images/owners/diego_morali.jpg") %>',
+      biography: [
+        'Comenzando en el ámbito de la publicidad, y la animación, me consolidé como ilustrador desde hace más de 10 años trabajando para empresas como Michelin, BFGoodrich, Netflix, Anima estudios, Mini Cooper, Harley Davidson, entre otras...',
+      ],
+      links: [
+        'https://www.behance.net/dimorali',
+        'https://www.facebook.com/rudimorali',
+      ],
+      area: 'Ilustración',
+      description: [
+        'En esta conferencia se abordará el cómo emprender una carrera en la ilustración como una guía básica para la supervivencia en el medio.',
+      ],
+    },
+    {
+      id: 11,
+      title: 'Diseño Editorial, como darle la vuelta a la tortilla sin quemarse las manos',
+      datestart: new Date('2017-04-28T17:00:00.000-06:00'),
+      dateend: new Date('2017-04-28T18:00:00.000-06:00'),
+      fullname: 'Oscar Rodríguez Amado',
+      image: '<%= static_path(@conn, "/images/owners/oscar_rodriguez.jpg") %>',
+      biography: [
+        'Diseñador y comunicador visual egresado de la Facultad de Artes y Diseño de la UNAM. Trabajó director editorial y editor gráfico de la Revista Picnic. Es director de Cósmica, un proyecto que se dedica a difundir y consolidar la gran producción de ilustración en México. Hace collage para exorcizar sus demonios y para contar su vida con imágenes.',
+      ],
+      links: [
+        'https://www.behance.net/portamalmar',
+      ],
+      area: 'Editorial',
+      description: [
+        '¿El mundo de los impresos está en crisis? ¿Cuál es papel de los medios de comunicación en papel ante la obscena cantidad de información que consumimos por minuto en internet? Renovarse o morir en el intento, el reto de las revistas en México.',
+      ],
+    },
+  ];
+
+</script>
+<script src="<%= static_path(@conn, "/js/appAlt.js") %>"></script>
