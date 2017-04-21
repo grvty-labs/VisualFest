@@ -8,7 +8,6 @@ function mapStateToProps(state) {
   return {
     home_display: '/images/logo.svg',
     goToDisplays: [
-      'ACERCA',
       'CONFERENCIAS',
       'TALLERES',
       'PATROCINADORES',
@@ -21,7 +20,6 @@ function mapDispatchToProps(dispatch) {
   return {
     home_action: () => (dispatch(changeLocation('/'))),
     goToActions: [
-      () => (dispatch(changeLocation('/acerca'))),
       () => (dispatch(changeLocation('/conferencias'))),
       () => (dispatch(changeLocation('/talleres'))),
       () => (dispatch(changeLocation('/patrocinadores'))),

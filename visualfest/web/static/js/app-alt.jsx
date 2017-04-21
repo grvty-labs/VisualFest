@@ -11,7 +11,7 @@ import {
   configureStore,
   history,
 } from './store';
-import About from './containers/About.jsx';
+
 import BlotLeft from './containers/BlotLeft.jsx';
 import BlotRight from './containers/BlotRight.jsx';
 import Conferences from './containers/Conferences.jsx';
@@ -48,7 +48,6 @@ class VisualFest extends Component {
               transitionLeave={true}> */}
               <Switch>
                 <Route key={1} exact path="/" component={ Home }/>
-                <Route key={2} path="/acerca" component={ About }/>
                 <Route key={3} path="/conferencias" component={ Conferences }/>
                 <Route key={4} path="/talleres" component={ Workshops }/>
                 <Route key={5} path="/patrocinadores" component={ Sponsors }/>

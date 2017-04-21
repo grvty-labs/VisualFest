@@ -404,5 +404,29 @@
     },
   ];
 
+  var CONST_GALLERY = [
+    {
+      src: '<%= static_path(@conn, "/images/gallery/soriano/1.jpg") %>',
+      title: 'Bird',
+      description: '' },
+    { src: '<%= static_path(@conn, "/images/gallery/soriano/2.jpg") %>',
+      title: 'Dadioactive Man', description: '' },
+    { src: '<%= static_path(@conn, "/images/gallery/soriano/3.jpg") %>',
+      title: 'Liam',
+      description: '' },
+    { src: '<%= static_path(@conn, "/images/gallery/soriano/4.jpg") %>',
+      title: 'Monsters',
+      description: '' },
+    { src: '<%= static_path(@conn, "/images/gallery/soriano/5.jpg") %>',
+      title: 'Untitled', description: '' },
+    { src: '<%= static_path(@conn, "/images/gallery/soriano/6.jpg") %>',
+      title: 'Spoilertime', description: '' },
+    { src: '<%= static_path(@conn, "/images/gallery/soriano/7.jpg") %>',
+      title: 'Stranger Things', description: '' },
+    { src: '<%= static_path(@conn, "/images/gallery/soriano/8.jpg") %>',
+      title: 'Talavera', description: '' },
+  ];
+
 </script>
+<!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
 <script src="<%= static_path(@conn, "/js/appAlt.js") %>"></script>
