@@ -6,12 +6,16 @@ import Topbar from '../components/Topbar.jsx';
 
 function mapStateToProps(state) {
   return {
+    burguer_icon: '/images/hamburguesa.svg',
     home_display: '/images/logo.svg',
     goToDisplays: [
       'CONFERENCIAS',
       'TALLERES',
       'PATROCINADORES',
       'GALERÍA',
+    ],
+    otherGoToDisplays: [
+      'CONTACTO',
     ],
   };
 }
@@ -24,6 +28,9 @@ function mapDispatchToProps(dispatch) {
       () => (dispatch(changeLocation('/talleres'))),
       () => (dispatch(changeLocation('/patrocinadores'))),
       () => (dispatch(changeLocation('/galeria'))),
+    ],
+    otherGoToActions: [
+      () => (dispatch(changeLocation('/contacto'))),
     ],
   };
 }

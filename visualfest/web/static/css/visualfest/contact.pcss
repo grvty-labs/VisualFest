@@ -9,12 +9,13 @@
 
   @media (--desktop) {
     flex-direction: row;
-    padding-left: 2rem;
+    padding-left: 7rem;
   }
 
   .map {
     iframe {
       border: 0;
+      border-radius: 10px;
       height: calc(100vh - 170px);
       width: 100%;
     }
@@ -24,11 +25,13 @@
     }
 
     @media (--desktop) {
-      lost-column: 1/2;
+      lost-column: 2/5;
     }
   }
 
   .details {
+    margin-top: 1.5rem;
+
     .line {
       border: 1px solid #fff;
       height: 2px;

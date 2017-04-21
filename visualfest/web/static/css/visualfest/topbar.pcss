@@ -1,25 +1,47 @@
 .topbar {
-  color: var(--white);
-  align-items: center;
   display: flex;
-  justify-content: space-between;
   lost-column: 19/19 0 30px;
   lost-utility: clearfix;
   padding: 25px 80px 10px 45px;
   position: fixed;
   z-index: 3;
 
-  & .tblogo {
-    lost-column: 2/17;
+  @media (--phone), (--tablet) {
+    flex-direction: column;
+    padding: 25px 30px 10px 30px;
+  }
+
+  @media (--desktop) {
+    flex-direction: row;
+    padding: 25px 80px 10px 45px;
+  }
+
+  .tbwrapper {
+    align-items: center;
+    display: inherit;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .tblogo {
+    @media (--phone), (--tablet) {
+      display: flex;
+      flex-shrink: 0;
+      width: 50%;
+    }
+
+    @media (--desktop) {
+      lost-column: 2/17;
+    }
 
     & > img {
       cursor: pointer;
-      max-width: 50%;
+      max-width: 100%;
     }
   }
 
-  & .tblinks {
-    display: inherit;
+  .tblinks {
     justify-content: flex-end;
     lost-column: 15/17;
     margin-top: 12px;
@@ -27,6 +49,71 @@
     & > span {
       cursor: pointer;
       margin-left: 1rem;
+    }
+
+    @media (--phone), (--tablet) {
+      display: none;
+      visibility: hidden;
+    }
+
+    @media (--desktop) {
+      display: inherit;
+      visibility: visible;
+    }
+  }
+
+  .tbburger {
+    @media (--phone), (--tablet) {
+      display: flex;
+      justify-content: flex-end;
+      flex-shrink: 0;
+      width: 50%;
+    }
+
+    @media (--desktop) {
+      visibility: hidden;
+    }
+
+    & > img {
+      cursor: pointer;
+      max-width: 50%;
+    }
+  }
+
+  .tbmobilelinks {
+    transition: max-height 0.2s ease-in-out;
+    background-color: var(--main-pane-background);
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    padding: 0;
+    max-height: 0px;
+    overflow: auto;
+    width: 100%;
+
+    &.show {
+      padding: 96px 2rem 2rem;
+      transition: max-height 0.3s ease-in-out;
+      max-height: 100vh;
+      visibility: visible;
+    }
+
+    & > span {
+      font-size: 1.5rem;
+      padding: 1rem;
+      cursor: pointer;
+      text-align: center;
+      width: 80%;
+    }
+
+    @media (--desktop) {
+      display: none;
+      visibility: hidden;
     }
   }
 }
