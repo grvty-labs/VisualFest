@@ -90,6 +90,16 @@ webpackConfiguration = {
               plugins: ['dynamic-import-webpack'],
             }, },
         ], },
+      // {
+      //   test: /masonry|imagesloaded|fizzy\-ui\-utils|desandro\-|outlayer|get\-size|doc\-ready|eventie|eventemitter/,
+      //   use: [
+      //     {
+      //       loader: 'imports-loader',
+      //       options: {
+      //         define: false,
+      //         this: window,
+      //       }, },
+      //     ], },
       { test: /\.pcss$/, exclude: /node_modules/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
