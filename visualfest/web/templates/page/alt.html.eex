@@ -55,7 +55,7 @@
 
     5: {
       fullname: 'Pendiente',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       biography: [
         'Pendiente',
       ],
@@ -78,7 +78,7 @@
 
     7: {
       fullname: 'Studio Vive',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       biography: [
         'Pendiente',
       ],
@@ -103,7 +103,7 @@
 
     9: {
       fullname: 'Jesús Rodolfo Baquier “Mostacho”',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       // image: '<%= static_path(@conn, "/images/owners/jesus_rodolfo.jpg") %>',
       biography: [
         'Pendiente',
@@ -116,7 +116,7 @@
 
     10: {
       fullname: 'Luis Almeida',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       biography: [
         'Pendiente',
       ],
@@ -127,7 +127,7 @@
 
     11: {
       fullname: 'Canalla Estudio',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       biography: [
         'Pendiente',
       ],
@@ -164,7 +164,7 @@
 
     14: {
       fullname: 'Jorge del Buenn Unna',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       biography: [
         'Pendiente',
       ],
@@ -186,7 +186,7 @@
 
     16: {
       fullname: 'Sociedad Fantmas',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       biography: [
         'Pendiente',
       ],
@@ -197,7 +197,7 @@
 
     17: {
       fullname: 'Javier Medellin "Jilipollo"',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       biography: [
         'Pendiente',
       ],

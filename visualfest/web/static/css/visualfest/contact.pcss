@@ -1,9 +1,11 @@
 .contact {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  width: 100%;
 
   @media (--tablet), (--phone) {
-    flex-direction: column;
+    /*flex-direction: column;*/
     padding-left: 0;
   }
 
@@ -21,11 +23,15 @@
     }
 
     @media (--tablet), (--phone) {
-      lost-column: 1;
+      lost-column: 1 0;
+      /*lost-row: 1 0;*/
+      /*lost-move: 1;*/
     }
 
     @media (--desktop) {
+      /*lost-row: 1;*/
       lost-column: 2/5;
+      /*lost-move: 0;*/
     }
   }
 
@@ -40,11 +46,15 @@
     }
 
     @media (--tablet), (--phone) {
-      lost-column: 1;
+      lost-column: 1 0;
+      /*lost-row: 1 0;*/
+      /*lost-move: -1;*/
     }
 
     @media (--desktop) {
+      /*lost-row: 1;*/
       lost-column: 1/4;
+      /*lost-move: 0;*/
     }
   }
 }

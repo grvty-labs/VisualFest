@@ -9,10 +9,18 @@
     left: -27%;
     position: fixed;
     top: -50px;
+
+    @media (--phone), (--tablet) {
+      z-index: 1;
+    }
+
+    @media (--desktop) {
+      z-index: inherit;
+    }
   }
 
   &.right {
-    bottom: 80px;
+    bottom: -80px;
     height: 75vh;
     position: absolute;
     right: -20%;
