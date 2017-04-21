@@ -2,18 +2,16 @@
 @import '../waddles/settings';
 @import '../waddles/utils';
 @import './blot';
+@import './contact';
 @import './downbar';
 @import './revealer';
-@import './responsive_rules';
 @import './sidebar';
-@import './title';
 @import './topbar';
 @import './home';
-@import './subtitle';
-@import './contentConferences';
-@import './conferences';
+@import './events';
 @import './aboutUs';
 @import './gallery';
+@import './texts';
 /*@import "./visualfest/App";*/
 @custom-media --phone (max-width: 768px);
 @custom-media --tablet (min-width: 768px);
@@ -25,9 +23,15 @@
 :root{
     --pink: #ff004f;
     --yellow: #ffe100;
-    --font:'Oswald', sans-serif;
-    --main-font:'Oswald', sans-serif;
     --white: #fff;
+
+    /*waddles*/
+    --main-pane-background: #11171E;
+    --body-font-color: #fff;
+    --headers-font-color: #fff;
+    --label-color: #fff;
+    --main-font:'Oswald', sans-serif;
+    --global-font-size: 16px;
 }
 
 .yellow{
@@ -43,8 +47,6 @@
 }
 
 body {
-  background-color: #11171E;
-  font-family: var(--font);
   position: relative;
 }
 
@@ -66,7 +68,6 @@ div {
   position: relative;
 
   & .route-content {
-    padding: 10px 0px;
     position: relative;
 
     @media (--phone) {
@@ -180,6 +181,7 @@ div {
                 transition: color .03s;
             }
         }
+
         & .navigation {
             & :any-link {
                 color: var(--sidebar-link-color);
@@ -203,6 +205,7 @@ div {
             }
         }
     }
+
     & .overlay {
         background-color: var(--overlay-background);
         lost-column: 1/1;

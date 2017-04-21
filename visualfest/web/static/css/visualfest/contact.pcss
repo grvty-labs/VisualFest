@@ -1,0 +1,47 @@
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (--tablet), (--phone) {
+    flex-direction: column;
+    padding-left: 0;
+  }
+
+  @media (--desktop) {
+    flex-direction: row;
+    padding-left: 2rem;
+  }
+
+  .map {
+    iframe {
+      border: 0;
+      height: calc(100vh - 170px);
+      width: 100%;
+    }
+
+    @media (--tablet), (--phone) {
+      lost-column: 1;
+    }
+
+    @media (--desktop) {
+      lost-column: 1/2;
+    }
+  }
+
+  .details {
+    .line {
+      border: 1px solid #fff;
+      height: 2px;
+      margin-bottom: 1.5rem;
+      width: 30%;
+    }
+
+    @media (--tablet), (--phone) {
+      lost-column: 1;
+    }
+
+    @media (--desktop) {
+      lost-column: 1/4;
+    }
+  }
+}

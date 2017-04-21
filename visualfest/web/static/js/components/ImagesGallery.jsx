@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 import React, { Component } from 'react';
 
 export default class ImagesGallery extends Component{
@@ -15,19 +15,15 @@ export default class ImagesGallery extends Component{
   }
 
   render() {
-    let images = this.props.images.map((image, index) => {
-      return (
-        <div key = { index } className = "containerImage">
-          <img src = { image.src }
-          className = { this.state.selected == index
-            ? 'bigImageGallery' : 'imageGallery' }
-          onClick = { () => this.changeSize(index)} />
-          </div>
-      );
-    }
-  );
+    let images = this.props.images.map((image, index) => (
+      <div key={ index } className='containerImage'>
+        <img src={ image.src }
+          className={ this.state.selected == index
+          ? 'bigImageGallery' : 'imageGallery' }
+          onClick={ () => this.changeSize(index)} />
+      </div>));
     return (
-      <div className = "containerGallery">
+      <div className='containerGallery'>
         { images }
       </div>
     );

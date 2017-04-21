@@ -15,7 +15,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    location_action: () => (dispatch(changeLocation('/'))),
+    location_action: () => (dispatch(changeLocation('/contacto'))),
     goToActions: [
       () => (dispatch(changeLocation('/contacto'))),
     ],
