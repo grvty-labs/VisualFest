@@ -7,8 +7,8 @@ function mapStateToProps(state) {
   return {
     sections: [
       {
-        title: 'Rodolfo Soriano',
-        images: CONST_GALLERY,
+        title: 'Portafolio',
+        images: CONST_GALLERY_PORTFOLIO,
       },
     ]
   };

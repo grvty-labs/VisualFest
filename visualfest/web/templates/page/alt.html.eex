@@ -404,27 +404,27 @@
     },
   ];
 
-  var CONST_GALLERY = [
+  var CONST_GALLERY_PORTFOLIO = [
     {
       src: '<%= static_path(@conn, "/images/gallery/soriano/1.jpg") %>',
-      title: 'Bird',
+      title: 'Roberto Soriano - Bird',
       description: '' },
     { src: '<%= static_path(@conn, "/images/gallery/soriano/2.jpg") %>',
-      title: 'Dadioactive Man', description: '' },
+      title: 'Roberto Soriano - Dadioactive Man', description: '' },
     { src: '<%= static_path(@conn, "/images/gallery/soriano/3.jpg") %>',
-      title: 'Liam',
+      title: 'Roberto Soriano - Liam',
       description: '' },
     { src: '<%= static_path(@conn, "/images/gallery/soriano/4.jpg") %>',
-      title: 'Monsters',
+      title: 'Roberto Soriano - Monsters',
       description: '' },
     { src: '<%= static_path(@conn, "/images/gallery/soriano/5.jpg") %>',
-      title: 'Untitled', description: '' },
+      title: 'Roberto Soriano - Untitled', description: '' },
     { src: '<%= static_path(@conn, "/images/gallery/soriano/6.jpg") %>',
-      title: 'Spoilertime', description: '' },
+      title: 'Roberto Soriano - Spoilertime', description: '' },
     { src: '<%= static_path(@conn, "/images/gallery/soriano/7.jpg") %>',
-      title: 'Stranger Things', description: '' },
+      title: 'Roberto Soriano - Stranger Things', description: '' },
     { src: '<%= static_path(@conn, "/images/gallery/soriano/8.jpg") %>',
-      title: 'Talavera', description: '' },
+      title: 'Roberto Soriano - Talavera', description: '' },
   ];
 
 </script>
