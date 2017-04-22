@@ -444,11 +444,11 @@
 
   var SPONSORS_IMAGES = [
     { src: '<%= static_path(@conn, "/images/sponsors/100uaq.svg") %>',
-      url: 'https://www.facebook.com', },
+      url: 'https://www.facebook.com/tiendauaq/', },
     { src: '<%= static_path(@conn, "/images/sponsors/facultad.svg") %>',
-      url: 'https://www.facebook.com', },
+      url: 'http://ba.uaq.mx/', },
     { src: '<%= static_path(@conn, "/images/sponsors/uaq.svg") %>',
-      url: 'https://www.facebook.com', },
+      url: 'http://www.uaq.mx', },
   ];
 
 </script>
