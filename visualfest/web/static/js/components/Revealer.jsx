@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 import React, { Component } from 'react';
 import { REVEALER_ANIMATION_TIME } from '../constants/hardcode.js';
 import anime from 'animejs';
@@ -58,7 +58,7 @@ export default class Revealer extends Component {
               position: 'absolute',
               top: '-1px',
             }}>
-            <path className="polymorph" fill='#002EFF' d='M 0,0 L 10,0 L 10,0 C 10,0 10,0 5,0 C 0,0 0,0 0,0 Z;M 0,0 L 10,0 L 10,0 C 10,0 10,5 5,5 C 0,5 0,0 0,0 Z;M 0,0 L 10,0 L 10,10 C 10,10 10,10 5,10 C 0,10 0,10 0,10 Z'/>
+            <path className='polymorph' fill='#002EFF' d='M 0,0 L 10,0 L 10,0 C 10,0 10,0 5,0 C 0,0 0,0 0,0 Z;M 0,0 L 10,0 L 10,0 C 10,0 10,5 5,5 C 0,5 0,0 0,0 Z;M 0,0 L 10,0 L 10,10 C 10,10 10,10 5,10 C 0,10 0,10 0,10 Z'/>
           </svg>
         </div>
       </div>

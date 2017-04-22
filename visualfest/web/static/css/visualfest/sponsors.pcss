@@ -1,0 +1,48 @@
+.sponsors {
+  display: flex;
+  flex-direction:column;
+
+  @media (--phone), (--tablet) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  @media (--desktop) {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .sponsors-list {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+
+    div {
+      /*display: block;*/
+      padding: 1.5rem;
+
+
+        @media (--phone), (--tablet) {
+          lost-waffle: 1 1;
+        }
+
+        @media (--desktop) {
+          lost-waffle: 1/4;
+        }
+
+      a {
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+      }
+
+      img {
+        align-items: center;
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+}

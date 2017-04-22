@@ -8,7 +8,6 @@ var _ = require('lodash');
 var PROD = false;
 
 var entries = {
-  app: './web/static/js/app.jsx',
   appAlt: './web/static/js/app-alt.jsx',
   appCSS: './web/static/css/app.pcss',
   // table_list: './web/static/js/react/tableList.jsx',

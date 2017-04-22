@@ -55,7 +55,7 @@
 
     5: {
       fullname: 'Pendiente',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       biography: [
         'Pendiente',
       ],
@@ -78,7 +78,7 @@
 
     7: {
       fullname: 'Studio Vive',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       biography: [
         'Pendiente',
       ],
@@ -103,7 +103,7 @@
 
     9: {
       fullname: 'Jesús Rodolfo Baquier “Mostacho”',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       // image: '<%= static_path(@conn, "/images/owners/jesus_rodolfo.jpg") %>',
       biography: [
         'Pendiente',
@@ -116,7 +116,7 @@
 
     10: {
       fullname: 'Luis Almeida',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       biography: [
         'Pendiente',
       ],
@@ -127,7 +127,7 @@
 
     11: {
       fullname: 'Canalla Estudio',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       biography: [
         'Pendiente',
       ],
@@ -164,7 +164,7 @@
 
     14: {
       fullname: 'Jorge del Buenn Unna',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       biography: [
         'Pendiente',
       ],
@@ -186,7 +186,7 @@
 
     16: {
       fullname: 'Sociedad Fantmas',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       biography: [
         'Pendiente',
       ],
@@ -197,7 +197,7 @@
 
     17: {
       fullname: 'Javier Medellin "Jilipollo"',
-      image: '<%= static_path(@conn, "/images/owners/unknown.png") %>',
+      image: '<%= static_path(@conn, "/images/owners/unknown.jpg") %>',
       biography: [
         'Pendiente',
       ],
@@ -404,5 +404,53 @@
     },
   ];
 
+  var CONST_GALLERY_PORTFOLIO = [
+    { src: '<%= static_path(@conn, "/images/gallery/farr/1.jpg") %>',
+      title: 'Tehani Farr - Huntress',
+      description: '' },
+    { src: '<%= static_path(@conn, "/images/gallery/farr/2.jpg") %>',
+      title: 'Tehani Farr - Mother Merreen III',
+      description: '' },
+
+
+    { src: 'https://pro2-bar-s3-cdn-cf6.myportfolio.com/270d43d2daf078a5a152446bf538f38d/0635b6c9cbb496398b8ed9a7_rw_1200.jpg?h=f66b0a1d870150f531387c4498313b98',
+      title: 'Jacobo Zanella - Urban Still Life - Untitled',
+      description: '' },
+    { src: 'https://pro2-bar-s3-cdn-cf3.myportfolio.com/270d43d2daf078a5a152446bf538f38d/ef035f7bb03588991fc618c5.jpg?h=61a397e499699852e78bcdc594b545cc',
+      title: 'Jacobo Zanella - Atmospheres - Untitled',
+      description: '' },
+
+
+    { src: '<%= static_path(@conn, "/images/gallery/soriano/1.jpg") %>',
+      title: 'Roberto Soriano - Bird',
+      description: '' },
+    { src: '<%= static_path(@conn, "/images/gallery/soriano/2.jpg") %>',
+      title: 'Roberto Soriano - Dadioactive Man', description: '' },
+    { src: '<%= static_path(@conn, "/images/gallery/soriano/3.jpg") %>',
+      title: 'Roberto Soriano - Liam',
+      description: '' },
+    { src: '<%= static_path(@conn, "/images/gallery/soriano/4.jpg") %>',
+      title: 'Roberto Soriano - Monsters',
+      description: '' },
+    { src: '<%= static_path(@conn, "/images/gallery/soriano/5.jpg") %>',
+      title: 'Roberto Soriano - Untitled', description: '' },
+    { src: '<%= static_path(@conn, "/images/gallery/soriano/6.jpg") %>',
+      title: 'Roberto Soriano - Spoilertime', description: '' },
+    { src: '<%= static_path(@conn, "/images/gallery/soriano/7.jpg") %>',
+      title: 'Roberto Soriano - Stranger Things', description: '' },
+    { src: '<%= static_path(@conn, "/images/gallery/soriano/8.jpg") %>',
+      title: 'Roberto Soriano - Talavera', description: '' },
+  ];
+
+  var SPONSORS_IMAGES = [
+    { src: '<%= static_path(@conn, "/images/sponsors/100uaq.svg") %>',
+      url: 'https://www.facebook.com/tiendauaq/', },
+    { src: '<%= static_path(@conn, "/images/sponsors/facultad.svg") %>',
+      url: 'http://ba.uaq.mx/', },
+    { src: '<%= static_path(@conn, "/images/sponsors/uaq.svg") %>',
+      url: 'http://www.uaq.mx', },
+  ];
+
 </script>
+<!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
 <script src="<%= static_path(@conn, "/js/appAlt.js") %>"></script>
