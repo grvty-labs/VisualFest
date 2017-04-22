@@ -1,6 +1,5 @@
 'use strict';
 import React, { Component } from 'react';
-import Title from '../components/Title.jsx';
 import Masonry from 'react-masonry-component';
 
 export default class Gallery extends Component {
@@ -29,7 +28,9 @@ export default class Gallery extends Component {
     let content = section.images.map(this.renderImage);
     return (
       <div className='section' key={ index }>
-        <Title whiteTitle={ section.title }/>
+        <div className='title'>
+          <h1 className='white'>{ section.title }</h1>
+        </div>
         <Masonry
           className={'images-list'} // default ''
           elementType={'div'} // default 'div'

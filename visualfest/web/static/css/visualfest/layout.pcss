@@ -9,7 +9,7 @@
 @import './topbar';
 @import './home';
 @import './events';
-@import './aboutUs';
+@import './sponsors';
 @import './gallery';
 @import './texts';
 /*@import "./visualfest/App";*/
@@ -32,6 +32,7 @@
     --label-color: #fff;
     --main-font:'Oswald', sans-serif;
     --global-font-size: 16px;
+    --global-lineheight: 1.6rem;
 }
 
 .yellow{
@@ -59,8 +60,21 @@ div {
   background-color: var(--vf-blue);
 }
 
+h1 {
+
+}
+
+h4 {
+  line-height: 1.9rem;
+}
+
+p {
+  line-height: 1.9rem;
+}
+
 .react-body {
   max-width: 100vw;
+  min-height: 100vh;
   overflow-y: inherit;
   overflow: hidden;
   position: relative;
