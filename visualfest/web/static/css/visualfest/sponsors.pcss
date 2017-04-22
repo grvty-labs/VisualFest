@@ -22,7 +22,15 @@
     div {
       /*display: block;*/
       padding: 1.5rem;
-      lost-waffle: 1/4;
+
+
+        @media (--phone), (--tablet) {
+          lost-waffle: 1 1;
+        }
+
+        @media (--desktop) {
+          lost-waffle: 1/4;
+        }
 
       a {
         display: flex;
