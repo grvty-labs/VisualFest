@@ -1,6 +1,5 @@
 'use strict';
 import React, { Component } from 'react';
-import Title from '../components/Title.jsx';
 
 export default class Events extends Component {
   constructor(props) {
@@ -13,7 +12,9 @@ export default class Events extends Component {
   renderDate (date, index) {
     return (
       <div className='date' key={ index }>
-        <Title whiteTitle={ date.whiteTitle }/>
+        <div className='title'>
+          <h1 className='white'>{ date.whiteTitle }</h1>
+        </div>
         { this.renderEventsList(date.conferences) }
       </div>
     );
