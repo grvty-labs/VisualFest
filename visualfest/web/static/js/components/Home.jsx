@@ -1,6 +1,5 @@
 'use strict';
 import React, { Component } from 'react';
-import Title from '../components/Title.jsx';
 import Subtitle from '../components/Subtitle.jsx';
 
 export default class Home extends Component {
@@ -11,9 +10,10 @@ export default class Home extends Component {
     return (
       <div className='borderMain'>
         <div className='bodyMain'>
-          <Title
-            yellowTitle={ this.props.yellowTitle }
-            pinkTitle={ this.props.pinkTitle }/>
+          <div className='title'>
+            <h1 className='yellow'>{ this.props.yellowTitle }</h1>
+            <h1 className='pink'> { this.props.pinkTitle }</h1>
+          </div>
           <Subtitle/>
           <div className='white'>{ content }</div>
         </div>

@@ -442,6 +442,15 @@
       title: 'Roberto Soriano - Talavera', description: '' },
   ];
 
+  var SPONSORS_IMAGES = [
+    { src: '<%= static_path(@conn, "/images/sponsors/100uaq.svg") %>',
+      url: 'https://www.facebook.com', },
+    { src: '<%= static_path(@conn, "/images/sponsors/facultad.svg") %>',
+      url: 'https://www.facebook.com', },
+    { src: '<%= static_path(@conn, "/images/sponsors/uaq.svg") %>',
+      url: 'https://www.facebook.com', },
+  ];
+
 </script>
 <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> -->
 <script src="<%= static_path(@conn, "/js/appAlt.js") %>"></script>
