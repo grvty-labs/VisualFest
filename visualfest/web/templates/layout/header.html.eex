@@ -1,0 +1,30 @@
+<!-- There is no Event type... Business then... -->
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# business: http://ogp.me/ns/business#">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="<%= assigns[:description] %>">
+  <meta name="author" content="GRTVY">
+
+  <title><%= assigns[:title] %></title>
+  <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+
+  <%= render "head-macros/fb-pixel.html",
+              conn: @conn,
+              pixel_id: "0" %>
+  <%= render "head-macros/google-analytics.html",
+              conn: @conn,
+              analytics_id: "0" %>
+  <%= render "head-macros/open-graph.html",
+              conn: @conn,
+              fbapp_id: "0",
+              title: assigns[:title],
+              description: assigns[:description],
+              image_card: assigns[:image_card] %>
+  <%= render "head-macros/twitter-cards.html",
+              conn: @conn,
+              title: assigns[:title],
+              description: assigns[:description],
+              image_card: assigns[:image_card] %>
+</head>

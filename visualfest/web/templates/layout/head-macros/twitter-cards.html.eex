@@ -1,0 +1,8 @@
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@grvtylabs">
+<meta name="twitter:creator" content="@grvtylabs">
+<meta name="twitter:title" content="<%= assigns[:title] %>">
+<meta name="twitter:description" content="<%= assigns[:description] %>">
+<%= if  assigns[:image_card] do %>
+  <meta name="twitter:image" content="<%= Visualfest.Router.Helpers.url(@conn) <> static_path(@conn, assigns[:image_card])%>">
+<% end %>
