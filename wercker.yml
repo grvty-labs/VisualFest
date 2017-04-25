@@ -15,7 +15,7 @@ build:
         name: Set envs and get versions
         code: |
           export MIX_ENV=test
-          export PROJECT_DIR="iq_produccion"
+          export PROJECT_DIR="visualfest"
           export LOGS_PATH=/pipeline/source/$PROJECT_DIR/wercker-logs
           export ERL_CRASH_DUMP=$LOGS_PATH/erl_crash.dump
           bash -c "echo 'Node version: $(node -v)'"
@@ -70,7 +70,7 @@ build:
     - script:
       name: Crash export
       code: |
-        export PROJECT_DIR="iq_produccion"
+        export PROJECT_DIR="visualfest"
         export LOGS_PATH=/pipeline/source/$PROJECT_DIR/wercker-logs
         export ERL_CRASH_DUMP=$LOGS_PATH/erl_crash.dump
         echo ""
@@ -121,26 +121,26 @@ deploy:
     - script:
         name: prod compile
         code: |
-          yes | MIX_ENV=prod mix compile
+          yes | mix compile
 
     - script:
-        name: brunch build --prod
+        name: webpack build
         code: |
-          node node_modules/brunch/bin/brunch build --production
+          node node_modules/webpack/bin/webpack -p
 
     - script:
         name: phoenix digest
         code: |
-          MIX_ENV=prod mix phoenix.digest
+          mix phoenix.digest
 
     - script:
         name: migrate db
         code: |
-          MIX_ENV=prod mix ecto.migrate
+          mix ecto.migrate
 
   after-steps:
-        - slack-notifier:  # Organization vars
-            url: $SLACK_URL
-            channel: $SLACK_CHANNEL
-            icon_url: $SLACK_ICON
-            username: $SLACK_USER
+    - wercker/slack-notifier@1.3.0:  # Organization vars
+        url: $SLACK_URL
+        channel: $SLACK_CHANNEL
+        icon_url: $SLACK_ICON
+        username: $SLACK_USER

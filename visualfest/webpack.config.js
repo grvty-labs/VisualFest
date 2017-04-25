@@ -77,7 +77,10 @@ webpackConfiguration = {
           loader: 'babel-loader',
           options: {
             presets: [['es2015', { modules: false }], 'stage-2'],
-            plugins: ['dynamic-import-webpack'],
+            plugins: [
+              'dynamic-import-webpack',
+              // 'transform-object-rest-spread',
+            ],
           }, },
         ], },
       { test: /\.jsx$/,
@@ -87,7 +90,10 @@ webpackConfiguration = {
             loader: 'babel-loader',
             options: {
               presets: ['react', ['es2015', { modules: false }], 'stage-2'],
-              plugins: ['dynamic-import-webpack'],
+              plugins: [
+                'dynamic-import-webpack',
+                // 'transform-object-rest-spread',
+              ],
             }, },
         ], },
       { test: /\.pcss$/, exclude: /node_modules/,
