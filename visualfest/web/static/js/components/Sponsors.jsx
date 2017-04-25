@@ -1,5 +1,6 @@
 'use strict';
-import React, { Component } from 'react';
+import React from 'react';
+import Component from './custom/ScrollOnMountComponent.jsx';
 
 export default class Sponsors extends Component {
   constructor(props) {
@@ -9,8 +10,8 @@ export default class Sponsors extends Component {
 
   renderSponsors(element, index) {
     return (
-      <div>
-        <a href={ element.url } key={ index }>
+      <div key={ index }>
+        <a href={ element.url }>
           <img src={ element.src } />
         </a>
       </div>

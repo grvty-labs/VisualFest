@@ -1,0 +1,14 @@
+<meta property='fb:app_id'content='<%= assigns[:fbapp_id] %>' />
+<meta property='og:type' content='business.business'>
+<meta property='og:url' content='<%= Visualfest.Router.Helpers.url(@conn) <> @conn.request_path %>'>
+<meta property='og:title' content='<%= assigns[:title] %>'>
+<%= if assigns[:image_card] do %>
+  <meta property='og:image' content='<%= Visualfest.Router.Helpers.url(@conn) <> static_path(@conn, assigns[:image_card])%>'>
+<% end %>
+<meta property='og:description' content='<%= assigns[:description] %>'>
+<meta property="business:contact_data:street_address" content="Juan Caballero y Ocio 212." />
+<meta property="business:contact_data:locality" content="Queretaro" />
+<meta property="business:contact_data:postal_code"    content="76050" />
+<meta property="business:contact_data:country_name"   content="Mexico" />
+<meta property="place:location:latitude" content="20.597093" />
+<meta property="place:location:longitude" content="-100.380857" />

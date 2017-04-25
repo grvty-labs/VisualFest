@@ -14,6 +14,7 @@ import {
 
 import BlotLeft from './containers/BlotLeft.jsx';
 import BlotRight from './containers/BlotRight.jsx';
+import ConferenceDetail from './containers/ConferenceDetail.jsx';
 import Conferences from './containers/Conferences.jsx';
 import Contact from './containers/Contact.jsx';
 import Downbar from './containers/Downbar.jsx';
@@ -23,6 +24,7 @@ import Revealer from './containers/Revealer.jsx';
 import Sidebar from './containers/Sidebar.jsx';
 import Sponsors from './containers/Sponsors.jsx';
 import Topbar from './containers/Topbar.jsx';
+import WorkshopDetail from './containers/WorkshopDetail.jsx';
 import Workshops from './containers/Workshops.jsx';
 
 const store = configureStore();
@@ -48,11 +50,13 @@ class VisualFest extends Component {
               transitionLeave={true}> */}
               <Switch>
                 <Route key={1} exact path="/" component={ Home }/>
+                <Route key={2} exact path="/conferencias/:id" component={ ConferenceDetail }/>
                 <Route key={3} path="/conferencias" component={ Conferences }/>
-                <Route key={4} path="/talleres" component={ Workshops }/>
-                <Route key={5} path="/patrocinadores" component={ Sponsors }/>
-                <Route key={6} path="/galeria" component={ Gallery }/>
-                <Route key={7} path="/contacto" component={ Contact }/>
+                <Route key={4} exact path="/talleres/:id" component={ WorkshopDetail }/>
+                <Route key={5} path="/talleres" component={ Workshops }/>
+                <Route key={6} path="/patrocinadores" component={ Sponsors }/>
+                <Route key={7} path="/galeria" component={ Gallery }/>
+                <Route key={8} path="/contacto" component={ Contact }/>
               </Switch>
               {/* </CSSTransitionGroup> */}
             </div>

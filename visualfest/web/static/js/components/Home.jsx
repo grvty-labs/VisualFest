@@ -1,6 +1,6 @@
 'use strict';
-import React, { Component } from 'react';
-import Subtitle from '../components/Subtitle.jsx';
+import React from 'react';
+import Component from './custom/ScrollOnMountComponent.jsx';
 
 export default class Home extends Component {
   render () {
@@ -14,7 +14,24 @@ export default class Home extends Component {
             <h1 className='yellow'>{ this.props.yellowTitle }</h1>
             <h1 className='pink'> { this.props.pinkTitle }</h1>
           </div>
-          <Subtitle/>
+
+          <div className='subtitleLine'>
+            <div className='containerSubtitle'>
+              <div className='subtitleFormat'>
+                <div className='marginSubtitle'>
+                  <h3 className='white'>PIENSA,</h3>
+                </div>
+                <h3 className ='yellow'>/</h3>
+              </div>
+              <div className='subtitleFormat'>
+                <div className='marginSubtitle'>
+                  <h3 className='white'>INTERACTÚA</h3>
+                </div>
+                <h3 className ='yellow'>TRANSFORMA</h3>
+              </div>
+            </div>
+          </div>
+
           <div className='white'>{ content }</div>
         </div>
       </div>

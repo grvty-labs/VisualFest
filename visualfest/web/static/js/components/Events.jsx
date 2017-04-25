@@ -1,5 +1,6 @@
 'use strict';
-import React, { Component } from 'react';
+import React from 'react';
+import Component from './custom/ScrollOnMountComponent.jsx';
 
 export default class Events extends Component {
   constructor(props) {
@@ -15,13 +16,13 @@ export default class Events extends Component {
         <div className='title'>
           <h1 className='white'>{ date.whiteTitle }</h1>
         </div>
-        { this.renderEventsList(date.conferences) }
+        { this.renderEventsList(date.events) }
       </div>
     );
   }
 
-  renderEventsList(conferences) {
-    let info = conferences.map(this.renderEvent);
+  renderEventsList(events) {
+    let info = events.map(this.renderEvent);
     return (
       <div className='events-list'>
         { info }
@@ -32,8 +33,9 @@ export default class Events extends Component {
   renderEvent(element, index) {
     const { owners } = this.props;
     return (
-      <div key={ index } className='element'>
-        <img src={ owners[element.owner].image } />
+      <div key={ index } className='element'
+        onClick={ () => this.props.select(index) }>
+        <img src={ element.image } />
         <p>{ element.timestart }</p>
         <h4> { element.title }</h4>
         <h5>{ owners[element.owner].fullname }</h5>
