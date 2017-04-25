@@ -1,7 +1,7 @@
 import { combineEpics } from 'redux-observable';
 import {
   animateLocationEpic,
-  changeLocationEpic
+  changeLocationEpic,
 } from './locationEpic';
 
 const epics = combineEpics(

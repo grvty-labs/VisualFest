@@ -1,5 +1,6 @@
 'use strict';
-import React, { Component } from 'react';
+import React from 'react';
+import Component from './custom/ScrollOnMountComponent.jsx';
 
 export default class Contact extends Component {
   constructor(props) {

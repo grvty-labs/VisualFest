@@ -1,5 +1,6 @@
 'use strict';
-import React, { Component } from 'react';
+import React from 'react';
+import Component from './custom/ScrollOnMountComponent.jsx';
 import Masonry from 'react-masonry-component';
 
 export default class Gallery extends Component {
