@@ -19,6 +19,8 @@ function mapStateToProps(state) {
       },
       {
         whiteTitle: '28 ABRIL',
+        carry: state[DATA_CONFERENCES].conferences.filter(
+          (conference) => (conference.date == 27)).length,
         events: state[DATA_CONFERENCES].conferences.filter(
           (conference) => (conference.date == 28)),
       },

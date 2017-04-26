@@ -16,13 +16,13 @@ export default class Events extends Component {
         <div className='title'>
           <h1 className='white'>{ date.whiteTitle }</h1>
         </div>
-        { this.renderEventsList(date.events) }
+        { this.renderEventsList(date.events, date.carry) }
       </div>
     );
   }
 
-  renderEventsList(events) {
-    let info = events.map(this.renderEvent);
+  renderEventsList(events, carry) {
+    let info = events.map((e, i) => this.renderEvent(e, i, carry));
     return (
       <div className='events-list'>
         { info }
@@ -30,11 +30,12 @@ export default class Events extends Component {
     );
   }
 
-  renderEvent(element, index) {
+  renderEvent(element, index, carry) {
     const { owners } = this.props;
     return (
       <div key={ index } className='element'
-        onClick={ () => this.props.select(index) }>
+        onClick={
+          () => this.props.select(carry ? index + carry : index) }>
         <img src={ element.image } />
         <p>{ element.timestart }</p>
         <h4> { element.title }</h4>

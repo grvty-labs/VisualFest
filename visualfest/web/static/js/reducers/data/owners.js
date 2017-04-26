@@ -77,7 +77,7 @@ const initialState = {
     },
 
     7: {
-      fullname: 'Studio Vive',
+      fullname: 'ESTÁ VIVO ESTUDIO',
       avatar: '/images/owners/unknown.jpg',
       biography: [
         'Pendiente',
@@ -88,7 +88,7 @@ const initialState = {
     },
 
     8: {
-      fullname: ' Roberto  Soriano  Esquivel  "Robertoon"',
+      fullname: 'Roberto Soriano Esquivel "Robertoon"',
       avatar: '/images/owners/roberto_soriano.jpg',
       biography: [
         'Desde que tengo memoria el diseño y la ilustración han sido mi estilo de vida, comenzando con los obligados rayones en mis libretas y paredes de mi cuarto, hasta la entrega de mi primer proyecto profesional. Soy egresado de la Universidad Autónoma del estado de Hidalgo de la Lic. en Diseño Gráfico. He trabajado para diversas agencias de publicidad realizando artes para clientes como Michelin, Starbucks, Huevocartoon, entre otros. Actualmente soy Ilustrador y Cofundador del estudio MIDOMI en la Cd. De Querétaro ',
@@ -118,21 +118,21 @@ const initialState = {
       fullname: 'Luis Almeida',
       avatar: '/images/owners/unknown.jpg',
       biography: [
-        'Pendiente',
+        'Nacional Autónoma de México, con mención honorífica. Posteriormente realizó estudios de diseño industrial en la Universidad de Florencia, Italia, y de semiótica en la Sorbona, y además trabajó en Francia como diseñador gráfico de la Société Look. En México inició sus trabajos en la Imprenta Madero, donde colaboró con Vicente Rojo, y en 1985 ingresó a Redacta, taller donde desarrollaría el diseño editorial y corporativo. Entre los diversos reconocimientos a su obra destaca el Premio Nacional al Arte Editorial del año de 1987 por el catálogo Miguel Covarrubias, en 1993 por la revista El observador internacional, y por el libro Imágenes de un encuentro, y en 1995 por su obra De las estaciones. Asimismo, se le otorgó el premio de la Confederación Latinoamericana de Artes Gráficas por el catálogo Retablo de los dolores, y en 1996 la mención honorífica del Consejo de Diseñadores de México al boletín Biodiversitas. Además, ese mismo año, la UNESCO designó en París a la revista Saber Ver como la mejor publicación de carácter cultural de este tipo; en 1997 recibió el premio Quorum a la mejor gacetilla por el ya mencionado boletín, y en 1999 el mismo premio por el mejor catálogo de arte. Almeida es miembro fundador de Quorum, el Consejo de Diseñadores de México, y fue su presidente durante 1989.  En 1991 fue aceptado como miembro curricular y se le nombró perito en diseño por parte del Colegio de Diseñadores Industriales y Gráficos de México (CODIGRAM); fungió como delegado de dicho colegio ante la XVI Asamblea General de ICOGRADA, en Portugal, y en la XVII Asamblea celebrada en Uruguay, y en el año de 1998 fue invitado al Festival de Gráfica de Chaumont, Francia.',
       ],
       links: [
-        'http://grvty.digital/',
+        'https://foroalfa.org/luis-almeida-herrera',
       ],
     },
 
     11: {
-      fullname: 'Canalla Estudio',
+      fullname: 'Gerardo Morales',
       avatar: '/images/owners/unknown.jpg',
       biography: [
-        'Pendiente',
+        'Diseñador Gráfico especializado en UI con más de 12 años de experiencia, comenzó en Ogilvy Interactive y por 8 años dirigió su propia agencia digital llamada Altiva Media, ha trabajado con grandes marcas como Nestle, Volvo, Amex, Reebook, Motorla, Johnson & Johnson y Cervecería Cuauhtemoc Moctezuma entre otros, entusiasta de la experiencia de usuario y del branding, desde hace un año es socio y fundador de Canalla Agency en la ciudad de Querétaro.',
       ],
       links: [
-        'http://grvty.digital/',
+        'http://canalla.agency',
       ],
     },
 
@@ -166,7 +166,7 @@ const initialState = {
       fullname: 'Jorge del Buenn Unna',
       avatar: '/images/owners/unknown.jpg',
       biography: [
-        'Pendiente',
+        'Caliente, una corporación internacional dedicada al entretenimiento con apuestas. Ha recibido varios reconocimientos internacionales por su trabajo en la televisión, así como en su desempeño como caricaturista, diseñador gráfico, diseñador editorial y director artístico. Ha impartido cursos y conferencias sobre tipografía, ortotipografía y diseño editorial en varias universidades e instituciones educativas de México, Argentina, Brasil, Chile, España, El Salvador, Canadá, Perú, Uruguay y los Estados Unidos. Entre sus obras destacan el Manual de diseño editorial (4.ª edición, Gijón: Trea, 2014), Introducción al estudio de la tipografía (Guadalajara: Editorial Universitaria, 2011, Gijón: Trea, 2011), Diseño, comunicación y neurociencias (Gijón: Trea, 2013) y Palabras Mayores. El libro (con Alberto Gómez Font, Antonio Martín y Xosé Castro Roig, Barcelona: Larousse, 2015). Es miembro de la Asociación Tipográfica Internacional (ATypI) y del colectivo Palabras Mayores. Desde el 2009 radica en la ciudad de Querétaro.',
       ],
       links: [
         'http://grvty.digital/',
@@ -185,13 +185,13 @@ const initialState = {
     },
 
     16: {
-      fullname: 'Sociedad Fantmas',
+      fullname: 'Sociedad Fantasma',
       avatar: '/images/owners/unknown.jpg',
       biography: [
-        'Pendiente',
+        'Somos un estudio de ilustración y animación con sede en la Ciudad de México. Nos gusta contar historias por medio del uso del stotytelling. Hemos trabajado con marcas como son Google, Pepsi, Evian, Plaza de la Tecnología, Pause Festival entre otros.',
       ],
       links: [
-        'http://grvty.digital/',
+        'http://www.sociedadfantasma.com',
       ],
     },
 
@@ -199,10 +199,11 @@ const initialState = {
       fullname: 'Javier Medellin "Jilipollo"',
       avatar: '/images/owners/unknown.jpg',
       biography: [
-        'Pendiente',
+        'Ilustrador mexicano, oriundo de San Luis Potosí. Su trabajo a veces se ve en publicaciones, productos, libros, pósters, publicidad, muros, discos, etc. para clientes en el globo como: Coca Cola, Google Plus, ESPN, Lufthansa Airlines, Aeroméxico Airlines, Anoto Pens, QUO magazine, Expansión magazine, Afrín, BOOM! Cómics, Cruz roja.',
+        'Algunas publicaciones y premios: Illustration now! vol. 4 (edit. Taschen) / Communication Arts Illustration / American Illustration 33 / Latin American Illustration 3 and 4 Winner Award / Society of Illustrators of L.A. 51, 52 and 53 (Silver Award) / Creative Pool Annual Winner 2015 / The 3×3 Illustration annual 11 and 13 Honorable Mention / Young Illustrators Award, Berlin / Juxtapoz Magazine',
       ],
       links: [
-        'http://grvty.digital/',
+        'http://www.jilipollo.com',
       ],
     },
   },

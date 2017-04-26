@@ -19,6 +19,8 @@ function mapStateToProps(state) {
       },
       {
         whiteTitle: '28 ABRIL',
+        carry: state[DATA_WORKSHOPS].workshops.filter(
+          (workshop) => (workshop.date == 27)).length,
         events: state[DATA_WORKSHOPS].workshops.filter(
           (workshop) => (workshop.date == 28)),
       },
