@@ -3,14 +3,14 @@ const initialState = {
   workshops: [
     {
       owner: 11,
-      title: 'Pendiente',
+      title: 'Descubriendo Sketch',
       area: 'Web',
       date: 27,
       timestart: '11:00 hrs',
       timeend: '15:00 hrs',
-      image: '/images/events/unknown.jpg',
+      image: '/images/events/gerardo_morales.jpg',
       description: [
-        'Pendiente',
+        'Curso básico de la herramienta más utilizada hoy en día para diseño de interfaz',
       ],
     },
     {
@@ -20,9 +20,9 @@ const initialState = {
       date: 27,
       timestart: '11:00 hrs',
       timeend: '15:00 hrs',
-      image: '/images/events/unknown.jpg',
+      image: '/images/events/sociedad_fantasma.jpg',
       description: [
-        'Pendiente',
+        'Animación de un clip animado en photoshop, mezclando técnicas de ilustración con footage grabado',
       ],
     },
     {
@@ -32,9 +32,9 @@ const initialState = {
       date: 28,
       timestart: '11:00 hrs',
       timeend: '15:00 hrs',
-      image: '/images/events/unknown.jpg',
+      image: '/images/events/sociedad_fantasma.jpg',
       description: [
-        'Pendiente',
+        'Animación de un clip animado en photoshop, mezclando técnicas de ilustración con footage grabado',
       ],
     },
     {
@@ -44,9 +44,9 @@ const initialState = {
       date: 28,
       timestart: '11:00 hrs',
       timeend: '15:00 hrs',
-      image: '/images/events/unknown.jpg',
+      image: '/images/events/jilipollo.jpg',
       description: [
-        'Pendiente',
+        'A todos los aspirantes nos gusta dibujar. Pero, ¿cómo crear una ilustración que nos deslumbre, y además que nos paguen por ella? Bienvenidos a este curso. En él trabajaremos juntos para adentrarnos en la ilustración como empresa, en trabajar sus habilidades en la idea y desarrollo de la misma teniendo como objetivo elaborar una ilustración profesional de principio a fin.',
       ],
     },
     {
