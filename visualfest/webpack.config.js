@@ -5,7 +5,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 var webpack = require('webpack');
 var _ = require('lodash');
 
-var PROD = false;
+var PROD = true;
 
 var entries = {
   appAlt: './web/static/js/app-alt.jsx',
@@ -50,7 +50,7 @@ var generateManifestPlugin = function (compiler) {
 };
 
 webpackConfiguration = {
-  devtool: PROD ? false : 'source-map',
+  devtool: PROD ? false : 'eval',
   entry: entries,
 
   output: {
@@ -147,4 +147,4 @@ if (PROD) {
   );
 }
 
-module.exports = webpackConfiguration
+module.exports = webpackConfiguration;

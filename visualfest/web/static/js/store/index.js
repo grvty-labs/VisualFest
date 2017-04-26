@@ -19,9 +19,11 @@ let middleware = [
   routerMiddleware(history),
 ];
 
-if (__DEVTOOLS__) {
+if (process.env.NODE_ENV !== 'production') {
   const createLogger = require('redux-logger').createLogger;
-  // const immutableLogger = require('redux-immutable-state-invariant').immutableStateInvariantMiddleware;
+
+  // const immutableLogger = require(
+  //    'redux-immutable-state-invariant').immutableStateInvariantMiddleware;
 
   const logger = createLogger({ collapsed: true });
   middleware = [
